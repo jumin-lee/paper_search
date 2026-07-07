@@ -120,12 +120,12 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">daily fetch · 08:00 KST · arXiv API</div>
+    <div class="eyebrow">daily arXiv 08:00 KST · monthly conf fetch (매월 1일)</div>
     <h1><span class="addr">0x</span>CXL PAPER MAP</h1>
     <div class="inventory">
       <div class="inv-cell">수집 논문<b id="stat-total">—</b></div>
       <div class="inv-cell">북마크<b><em id="stat-bm">—</em></b></div>
-      <div class="inv-cell">최근 회차<b id="stat-round">—</b></div>
+      <div class="inv-cell">최신 논문<b id="stat-round" style="font-size:16px; padding-top:3px">—</b></div>
       <div class="inv-cell">주제<b style="font-size:13px; padding-top:5px">CXL·PNM / GPU 공유메모리 / CXL 평가·서베이 / Graph</b></div>
     </div>
   </div>
@@ -190,12 +190,12 @@
       (view==="all" || bookmarks.has(p.id)) &&
       (!fTopic || p.topic.includes(fTopic)) &&
       (!fEval || p.eval===fEval) &&
-      (!q || (p.title+" "+(p.note||"")+" "+(p.venue||"")).toLowerCase().includes(q))
+      (!q || (p.title+" "+(p.note||"")+" "+(p.venue||"")+" "+(p.date||"")).toLowerCase().includes(q))
     );
 
     document.getElementById("stat-total").textContent = window.PAPERS.length + " 편";
     document.getElementById("stat-bm").textContent = bookmarks.size + " 편";
-    document.getElementById("stat-round").textContent = "R" + Math.max(...window.PAPERS.map(p=>p.round||1));
+    document.getElementById("stat-round").textContent = window.PAPERS.map(p=>p.date||"").sort().pop() || "—";
     document.getElementById("stat-excl").textContent = (window.EXCLUDED||[]).length;
 
     if(!rows.length){
@@ -203,18 +203,18 @@
       return;
     }
 
-    // 북마크 뷰: FIFO 순서 / 전체 뷰: 최신 회차부터 그룹핑
+    // 북마크 뷰: FIFO 순서 / 전체 뷰: 출판월 최신부터 그룹핑
     let html = "";
     if(view==="bm"){
       const order = [...bookmarks];
       rows.sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
       html += rows.map((p,i)=>rowHTML(p, hex(i+1))).join("");
     } else {
-      const rounds = [...new Set(rows.map(p=>p.round||1))].sort((a,b)=>b-a);
-      for(const r of rounds){
-        const batch = rows.filter(p=>(p.round||1)===r);
-        const dated = batch.find(p=>p.fetched);
-        html += `<div class="round-label">ROUND ${String(r).padStart(2,"0")}${dated ? " · "+dated.fetched : ""} · ${batch.length}편</div>`;
+      const months = [...new Set(rows.map(p=>(p.date||"").slice(0,7)))].sort((a,b)=>b.localeCompare(a));
+      for(const m of months){
+        const batch = rows.filter(p=>(p.date||"").slice(0,7)===m)
+                          .sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+        html += `<div class="round-label">${m||"날짜 미상"} · ${batch.length}편</div>`;
         html += batch.map(p=>rowHTML(p, hex(p.seq))).join("");
       }
     }
@@ -237,6 +237,7 @@
       <div>
         <div class="title"><a href="${p.url}" target="_blank" rel="noopener">${p.title}</a></div>
         <div class="meta">
+          ${p.date?`<span>${p.date}</span>`:""}
           <span>${p.venue||""}</span>
           <span class="chip ${p.eval}">${EVAL_LABEL[p.eval]||p.eval}</span>
           ${topics}

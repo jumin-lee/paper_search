@@ -51,10 +51,9 @@ def load_db():
 
 
 def save_db(src: str, papers: list):
-    new_src = re.sub(
-        r"window\.PAPERS\s*=\s*\[.*?\];",
-        "window.PAPERS = " + json.dumps(papers, ensure_ascii=False, indent=2) + ";",
-        src, flags=re.S)
+    payload = "window.PAPERS = " + json.dumps(papers, ensure_ascii=False, indent=2) + ";"
+    # replacement에 lambda 사용: 문자열로 주면 \m 같은 백슬래시(LaTeX 등)가 re.sub 이스케이프로 오해석됨
+    new_src = re.sub(r"window\.PAPERS\s*=\s*\[.*?\];", lambda m: payload, src, flags=re.S)
     PAPERS_JS.write_text(new_src, encoding="utf-8")
 
 
@@ -77,7 +76,6 @@ def main():
     src, papers, excluded = load_db()
     seen_ids = {p["id"] for p in papers} | {x["id"] for x in excluded}
     seen_titles = {norm_title(p["title"]) for p in papers} | {norm_title(x["title"]) for x in excluded}
-    next_round = max((p.get("round", 0) for p in papers), default=0) + 1
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     added = []
@@ -91,7 +89,7 @@ def main():
                         "id": hit["id"], "title": hit["title"],
                         "venue": f"arXiv {hit['id']} ({hit['published']})",
                         "topic": [topic], "eval": "unknown",
-                        "url": hit["url"], "round": next_round,
+                        "url": hit["url"], "date": hit["published"],
                         "fetched": today, "note": "자동 수집 — 평가방법 미분류",
                     }
                     papers.append(entry)
@@ -103,7 +101,7 @@ def main():
 
     if added:
         save_db(src, papers)
-        print(f"{len(added)}편 추가 (round {next_round}, {today}):")
+        print(f"{len(added)}편 추가 ({today}):")
         for a in added:
             print(f"  - [{'/'.join(a['topic'])}] {a['title']}")
     else:

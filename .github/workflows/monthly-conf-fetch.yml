@@ -1,0 +1,43 @@
+name: Monthly conference fetch
+
+on:
+  schedule:
+    # 매월 1일 23:30 UTC = 매월 2일 오전 8:30 KST
+    # (DBLP 인덱싱 지연이 있어 이번 달에 못 잡은 논문은 다음 달에 자동 수집됩니다)
+    - cron: "30 23 1 * *"
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "수집 연도 (비우면 올해)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch conference papers (DBLP + Semantic Scholar)
+        run: |
+          if [ -n "${{ github.event.inputs.year }}" ]; then
+            python scripts/fetch_conferences.py --year "${{ github.event.inputs.year }}"
+          else
+            python scripts/fetch_conferences.py
+          fi
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "actions@github.com"
+          git add data/papers.js
+          git diff --cached --quiet && echo "변경 없음" && exit 0
+          git commit -m "chore: monthly conference fetch $(date -u +%F)"
+          git push
