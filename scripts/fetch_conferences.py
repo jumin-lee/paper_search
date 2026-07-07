@@ -206,6 +206,7 @@ def main():
                 "title": h["title"],
                 "venue": f"{name} {args.year}",
                 "topic": topics or ["3"],
+                "tags": [name],
                 "eval": "unknown",
                 "url": url,
                 "date": h.get("pubdate") or f"{args.year}",

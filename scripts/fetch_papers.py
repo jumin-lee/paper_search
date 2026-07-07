@@ -88,7 +88,7 @@ def main():
                     entry = {
                         "id": hit["id"], "title": hit["title"],
                         "venue": f"arXiv {hit['id']} ({hit['published']})",
-                        "topic": [topic], "eval": "unknown",
+                        "topic": [topic], "tags": ["arXiv"], "eval": "unknown",
                         "url": hit["url"], "date": hit["published"],
                         "fetched": today, "note": "자동 수집 — 평가방법 미분류",
                     }

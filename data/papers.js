@@ -9,6 +9,10 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ICS",
+      "arXiv"
+    ],
     "eval": "sim",
     "url": "https://arxiv.org/html/2603.26131",
     "date": "2026-03",
@@ -20,6 +24,9 @@ window.PAPERS = [
     "venue": "arXiv 2511.00321",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2511.00321",
@@ -33,6 +40,10 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS",
+      "arXiv"
+    ],
     "eval": "sim",
     "url": "https://arxiv.org/html/2502.07578v1",
     "date": "2025-02",
@@ -44,6 +55,10 @@ window.PAPERS = [
     "venue": "MICRO 2024",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "MICRO",
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2404.19381",
@@ -57,6 +72,10 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "FPGA",
+      "arXiv"
+    ],
     "eval": "mixed",
     "url": "https://arxiv.org/abs/2512.11920",
     "date": "2025-12",
@@ -68,6 +87,10 @@ window.PAPERS = [
     "venue": "ICPP 2024",
     "topic": [
       "2"
+    ],
+    "tags": [
+      "ICPP",
+      "arXiv"
     ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2407.07850",
@@ -81,6 +104,9 @@ window.PAPERS = [
     "topic": [
       "2"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2404.13195",
     "date": "2024-04",
@@ -92,6 +118,10 @@ window.PAPERS = [
     "venue": "SOSP 2025",
     "topic": [
       "2"
+    ],
+    "tags": [
+      "SOSP",
+      "arXiv"
     ],
     "eval": "real",
     "url": "https://arxiv.org/pdf/2501.14794",
@@ -105,6 +135,9 @@ window.PAPERS = [
     "topic": [
       "2"
     ],
+    "tags": [
+      "EPEW"
+    ],
     "eval": "real",
     "url": "https://link.springer.com/chapter/10.1007/978-3-032-16345-5_4",
     "date": "2025-06",
@@ -116,6 +149,9 @@ window.PAPERS = [
     "venue": "arXiv 2412.20249",
     "topic": [
       "3"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "survey",
     "url": "https://arxiv.org/abs/2412.20249",
@@ -129,6 +165,9 @@ window.PAPERS = [
     "topic": [
       "3"
     ],
+    "tags": [
+      "TST"
+    ],
     "eval": "mixed",
     "url": "https://www.sciopen.com/article/10.26599/TST.2025.9010010",
     "date": "2026",
@@ -140,6 +179,9 @@ window.PAPERS = [
     "venue": "arXiv 2512.18194",
     "topic": [
       "3"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "emu",
     "url": "https://arxiv.org/abs/2512.18194",
@@ -153,6 +195,9 @@ window.PAPERS = [
     "topic": [
       "3"
     ],
+    "tags": [
+      "SIGMOD"
+    ],
     "eval": "real",
     "url": "https://dl.acm.org/doi/10.1145/3722212.3724460",
     "date": "2025-06",
@@ -164,6 +209,9 @@ window.PAPERS = [
     "venue": "arXiv (Oct 2025)",
     "topic": [
       "3"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://www.researchgate.net/publication/396541660",
@@ -177,6 +225,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2602.08800",
     "date": "2026-02",
@@ -188,6 +239,10 @@ window.PAPERS = [
     "venue": "ICS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ICS",
+      "arXiv"
     ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2602.22457",
@@ -201,6 +256,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2503.17864",
     "date": "2025-03",
@@ -212,6 +270,9 @@ window.PAPERS = [
     "venue": "PVLDB 18(9)",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "PVLDB"
     ],
     "eval": "real",
     "url": "https://dl.acm.org/doi/10.14778/3746405.3746432",
@@ -225,6 +286,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "CIDR"
+    ],
     "eval": "real",
     "url": "https://www.vldb.org/cidrdb/papers/2026/p1-huang.pdf",
     "date": "2026-01",
@@ -236,6 +300,9 @@ window.PAPERS = [
     "venue": "arXiv 2502.19233",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "emu",
     "url": "https://arxiv.org/abs/2502.19233",
@@ -249,6 +316,9 @@ window.PAPERS = [
     "topic": [
       "2"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2408.11556",
     "date": "2024-08",
@@ -260,6 +330,9 @@ window.PAPERS = [
     "venue": "arXiv 2603.23640",
     "topic": [
       "2"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2603.23640",
@@ -273,6 +346,10 @@ window.PAPERS = [
     "topic": [
       "2"
     ],
+    "tags": [
+      "PAISE",
+      "arXiv"
+    ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2506.09554",
     "date": "2025-06",
@@ -284,6 +361,9 @@ window.PAPERS = [
     "venue": "IEEE TC 75(4)",
     "topic": [
       "3"
+    ],
+    "tags": [
+      "IEEE TC"
     ],
     "eval": "real",
     "url": "https://dl.acm.org/doi/abs/10.14778/3685800.3685809",
@@ -297,6 +377,9 @@ window.PAPERS = [
     "topic": [
       "3"
     ],
+    "tags": [
+      "PVLDB"
+    ],
     "eval": "real",
     "url": "https://www.vldb.org/pvldb/vol17/p3827-ahn.pdf",
     "date": "2024-08",
@@ -308,6 +391,9 @@ window.PAPERS = [
     "venue": "arXiv 2509.03377",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2509.03377",
@@ -322,6 +408,10 @@ window.PAPERS = [
       "1",
       "3"
     ],
+    "tags": [
+      "ASPLOS",
+      "arXiv"
+    ],
     "eval": "mixed",
     "url": "https://arxiv.org/abs/2412.15246",
     "date": "2024-12",
@@ -333,6 +423,9 @@ window.PAPERS = [
     "venue": "arXiv 2602.08271",
     "topic": [
       "3"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2602.08271",
@@ -347,6 +440,9 @@ window.PAPERS = [
       "1",
       "3"
     ],
+    "tags": [
+      "MICRO"
+    ],
     "eval": "sim",
     "url": "https://dl.acm.org/doi/10.1145/3725843.3756020",
     "date": "2025-10",
@@ -358,6 +454,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2025 (Best Paper)",
     "topic": [
       "3"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://dl.acm.org/doi/10.1145/3676641.3711998",
@@ -371,6 +470,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "mixed",
     "url": "https://arxiv.org/abs/2512.04449",
     "date": "2025-12",
@@ -382,6 +484,9 @@ window.PAPERS = [
     "venue": "arXiv 2503.22017",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2503.22017",
@@ -395,6 +500,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "real",
     "url": "https://arxiv.org/abs/2507.03305",
     "date": "2025-07",
@@ -406,6 +514,9 @@ window.PAPERS = [
     "venue": "arXiv 2511.12286",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2511.12286",
@@ -420,6 +531,9 @@ window.PAPERS = [
       "1",
       "3"
     ],
+    "tags": [
+      "arXiv"
+    ],
     "eval": "mixed",
     "url": "https://arxiv.org/abs/2511.14400",
     "date": "2025-11",
@@ -432,6 +546,10 @@ window.PAPERS = [
     "topic": [
       "1",
       "g"
+    ],
+    "tags": [
+      "SC-W",
+      "arXiv"
     ],
     "eval": "emu",
     "url": "https://arxiv.org/abs/2312.03113",
@@ -446,6 +564,10 @@ window.PAPERS = [
       "1",
       "g"
     ],
+    "tags": [
+      "IEEE CAL",
+      "arXiv"
+    ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2505.16096",
     "date": "2025-05",
@@ -458,6 +580,9 @@ window.PAPERS = [
     "topic": [
       "1",
       "g"
+    ],
+    "tags": [
+      "arXiv"
     ],
     "eval": "sim",
     "url": "https://arxiv.org/abs/2601.03229",
@@ -472,6 +597,9 @@ window.PAPERS = [
       "1",
       "g"
     ],
+    "tags": [
+      "ATC"
+    ],
     "eval": "mixed",
     "url": "https://www.usenix.org/conference/atc23/presentation/jang",
     "date": "2023-07",
@@ -483,6 +611,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408613",
@@ -497,6 +628,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "HPCA"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408523",
     "date": "2026-01-31",
@@ -509,6 +643,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408495",
@@ -523,6 +660,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "HPCA"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408592",
     "date": "2024-12-28",
@@ -535,6 +675,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408588",
@@ -549,6 +692,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "HPCA"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408469",
     "date": "2026-01-31",
@@ -561,6 +707,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408452",
@@ -575,6 +724,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "HPCA"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408437",
     "date": "2026-01-24",
@@ -587,6 +739,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408509",
@@ -601,6 +756,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "HPCA"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408595",
     "date": "2026-01-31",
@@ -613,6 +771,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408527",
@@ -627,6 +788,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "HPCA"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408611",
     "date": "2025-11-28",
@@ -639,6 +803,9 @@ window.PAPERS = [
     "venue": "HPCA 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "HPCA"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408598",
@@ -653,6 +820,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "PPoPP"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3774934.3786411",
     "date": "2026-01-28",
@@ -665,6 +835,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790121",
@@ -679,6 +852,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790146",
     "date": "2026-03-22",
@@ -691,6 +867,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790226",
@@ -705,6 +884,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790150",
     "date": "2026-03-22",
@@ -717,6 +899,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790198",
@@ -731,6 +916,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790212",
     "date": "2026-03-22",
@@ -743,6 +931,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790203",
@@ -757,6 +948,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790148",
     "date": "2026-03-22",
@@ -769,6 +963,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790245",
@@ -783,6 +980,9 @@ window.PAPERS = [
     "topic": [
       "2"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3760250.3762217",
     "date": "2025-09-25",
@@ -795,6 +995,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790197",
@@ -809,6 +1012,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790201",
     "date": "2026-03-22",
@@ -821,6 +1027,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790149",
@@ -835,6 +1044,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "EuroSys"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3767295.3769321",
     "date": "2026-04-26",
@@ -847,6 +1059,9 @@ window.PAPERS = [
     "venue": "EuroSys 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "EuroSys"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3767295.3769371",
@@ -861,6 +1076,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "EuroSys"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3767295.3803621",
     "date": "2026-04-26",
@@ -873,6 +1091,9 @@ window.PAPERS = [
     "venue": "EuroSys 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "EuroSys"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3767295.3769344",
@@ -887,6 +1108,9 @@ window.PAPERS = [
     "topic": [
       "1"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790142",
     "date": "2026-03-22",
@@ -899,6 +1123,9 @@ window.PAPERS = [
     "venue": "ASPLOS 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "ASPLOS"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790137",
@@ -913,6 +1140,9 @@ window.PAPERS = [
     "topic": [
       "2"
     ],
+    "tags": [
+      "ASPLOS"
+    ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3779212.3790181",
     "date": "2026-03-22",
@@ -925,6 +1155,9 @@ window.PAPERS = [
     "venue": "EuroSys 2026",
     "topic": [
       "1"
+    ],
+    "tags": [
+      "EuroSys"
     ],
     "eval": "unknown",
     "url": "https://doi.org/10.1145/3767295.3803602",

@@ -63,6 +63,18 @@
   }
   .export:hover{background:var(--copper-soft)}
 
+  /* ── 태그 토글 바 (다중 선택 OR 필터) ── */
+  .tagbar{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
+  .tagt{
+    font-family:'IBM Plex Mono',monospace; font-size:11px;
+    border:1px solid var(--line); background:var(--surface); color:var(--muted);
+    padding:3px 10px; border-radius:12px; cursor:pointer;
+  }
+  .tagt b{font-weight:500; color:var(--copper); margin-left:3px}
+  .tagt[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:#fff}
+  .tagt[aria-pressed="true"] b{color:var(--copper)}
+  .tagt.reset{border-style:dashed; color:var(--copper); border-color:var(--copper)}
+
   /* ── 논문 행: 메모리 맵 ── */
   main{padding:20px 24px 80px}
   .round-label{
@@ -96,6 +108,7 @@
   .chip.mixed{background:var(--mixed)}
   .chip.unknown{background:none; color:var(--unknown); border:1px dashed var(--unknown)}
   .tchip{color:var(--muted); border:1px solid var(--line); background:var(--bg); padding:2px 7px; border-radius:2px; font-size:10.5px}
+  .vchip{color:var(--copper); border:1px solid var(--copper-soft); background:var(--copper-soft); padding:2px 7px; border-radius:2px; font-size:10.5px}
   .note{font-size:13px; color:var(--muted); margin-top:5px}
   .pin{
     background:none; border:none; cursor:pointer; font-size:19px; line-height:1;
@@ -154,6 +167,7 @@
     <input type="search" id="f-q" placeholder="제목·비고 검색…" aria-label="검색">
     <button class="export" id="btn-export">북마크 내보내기 ↓</button>
   </div>
+  <div class="wrap tagbar" id="tagbar" role="group" aria-label="학회·출처 태그 필터 (다중 선택)"></div>
 </div>
 
 <main>
@@ -180,6 +194,7 @@
   const persist = () => localStorage.setItem(LS_KEY, JSON.stringify([...bookmarks]));
 
   let view = "all", fTopic = "", fEval = "", q = "";
+  const selTags = new Set();  // 태그 다중 선택 (비어 있으면 전체, 선택 시 OR)
   const $list = document.getElementById("list");
 
   function hex(i){ return "0x" + i.toString(16).toUpperCase().padStart(2,"0"); }
@@ -190,7 +205,8 @@
       (view==="all" || bookmarks.has(p.id)) &&
       (!fTopic || p.topic.includes(fTopic)) &&
       (!fEval || p.eval===fEval) &&
-      (!q || (p.title+" "+(p.note||"")+" "+(p.venue||"")+" "+(p.date||"")).toLowerCase().includes(q))
+      (!selTags.size || (p.tags||[]).some(t=>selTags.has(t))) &&
+      (!q || (p.title+" "+(p.note||"")+" "+(p.venue||"")+" "+(p.date||"")+" "+(p.tags||[]).join(" ")).toLowerCase().includes(q))
     );
 
     document.getElementById("stat-total").textContent = window.PAPERS.length + " 편";
@@ -232,6 +248,7 @@
   function rowHTML(p, addr){
     const on = bookmarks.has(p.id);
     const topics = p.topic.map(t=>`<span class="tchip">${TOPIC_LABEL[t]||t}</span>`).join("");
+    const vtags = (p.tags||[]).map(t=>`<span class="vchip">${t}</span>`).join("");
     return `<article class="row ${on?"bookmarked":""}">
       <div class="addr mono">${addr}</div>
       <div>
@@ -241,12 +258,37 @@
           <span>${p.venue||""}</span>
           <span class="chip ${p.eval}">${EVAL_LABEL[p.eval]||p.eval}</span>
           ${topics}
+          ${vtags}
         </div>
         ${p.note?`<div class="note">${p.note}</div>`:""}
       </div>
       <button class="pin" data-id="${p.id}" aria-pressed="${on}" title="${on?"북마크 해제":"북마크"}">${on?"●":"○"}</button>
     </article>`;
   }
+
+  // 태그 토글 바: 데이터에서 태그 집계 → 논문 수 내림차순, 다중 선택(OR)
+  (function buildTagbar(){
+    const counts = {};
+    window.PAPERS.forEach(p=>(p.tags||[]).forEach(t=>counts[t]=(counts[t]||0)+1));
+    const $bar = document.getElementById("tagbar");
+    $bar.innerHTML = Object.entries(counts).sort((a,b)=>b[1]-a[1])
+      .map(([t,n])=>`<button class="tagt" data-tag="${t}" aria-pressed="false">${t}<b>${n}</b></button>`)
+      .join("") + `<button class="tagt reset" id="tag-reset" hidden>태그 해제 ×</button>`;
+    const $reset = document.getElementById("tag-reset");
+    $bar.querySelectorAll(".tagt[data-tag]").forEach(btn=>btn.addEventListener("click", ()=>{
+      const t = btn.dataset.tag;
+      selTags.has(t) ? selTags.delete(t) : selTags.add(t);
+      btn.setAttribute("aria-pressed", selTags.has(t));
+      $reset.hidden = !selTags.size;
+      render();
+    }));
+    $reset.addEventListener("click", ()=>{
+      selTags.clear();
+      $bar.querySelectorAll(".tagt[data-tag]").forEach(b=>b.setAttribute("aria-pressed","false"));
+      $reset.hidden = true;
+      render();
+    });
+  })();
 
   // 컨트롤 바인딩
   document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click", ()=>{
