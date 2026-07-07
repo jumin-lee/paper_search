@@ -1164,6 +1164,886 @@ window.PAPERS = [
     "date": "2026-04-26",
     "fetched": "2026-07-07",
     "note": "Recent advances in CXL 3.0 have revitalized Distributed Shared Memory (DSM), enabling zero-copy sharing across machine nodes at near-NUMA latency and making shared-memory communication practical for distributed applicati… (abstract 발췌)"
+  },
+  {
+    "id": "2606.12556",
+    "title": "ITME: Inference Tiered Memory Expansion with Disaggregated CXL-Hybrid Memories",
+    "venue": "arXiv 2606.12556 (2026-06-10)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2606.12556",
+    "date": "2026-06-10",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2604.18120",
+    "title": "Proxics: an efficient programming model for far memory accelerators",
+    "venue": "arXiv 2604.18120 (2026-04-20)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2604.18120",
+    "date": "2026-04-20",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2512.04476",
+    "title": "Context-Aware Mixture-of-Experts Inference on CXL-Enabled GPU-NDP Systems",
+    "venue": "arXiv 2512.04476 (2025-12-04)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2512.04476",
+    "date": "2025-12-04",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2507.18559",
+    "title": "Optimizing Tree-structure Indexes for CXL-based Heterogeneous Memory with SINLK",
+    "venue": "arXiv 2507.18559 (2025-07-24)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2507.18559",
+    "date": "2025-07-24",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2506.15613",
+    "title": "From Block to Byte: Transforming PCIe SSDs with CXL Memory Protocol and Instruction Annotation",
+    "venue": "arXiv 2506.15613 (2025-06-18)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2506.15613",
+    "date": "2025-06-18",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2506.09758",
+    "title": "Mainframe-Style Channel Controllers for Modern Disaggregated Memory Systems",
+    "venue": "arXiv 2506.09758 (2025-06-11)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2506.09758",
+    "date": "2025-06-11",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2501.02524",
+    "title": "A Full-System Simulation Framework for CXL-Based SSD Memory System",
+    "venue": "arXiv 2501.02524 (2025-01-05)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2501.02524",
+    "date": "2025-01-05",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2412.12491",
+    "title": "Optimizing System Memory Bandwidth with Micron CXL Memory Expansion Modules on Intel Xeon 6 Processors",
+    "venue": "arXiv 2412.12491 (2024-12-17)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2412.12491",
+    "date": "2024-12-17",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2411.02814",
+    "title": "The Hitchhiker's Guide to Programming and Optimizing Cache Coherent Heterogeneous Systems: CXL, NVLink-C2C, and AMD Infinity Fabric",
+    "venue": "arXiv 2411.02814 (2024-11-05)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2411.02814",
+    "date": "2024-11-05",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2411.02282",
+    "title": "CXL-DMSim: A Full-System CXL Disaggregated Memory Simulator With Comprehensive Silicon Validation",
+    "venue": "arXiv 2411.02282 (2024-11-04)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2411.02282",
+    "date": "2024-11-04",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2409.16633",
+    "title": "PIFS-Rec: Process-In-Fabric-Switch for Large-Scale Recommendation System Inferences",
+    "venue": "arXiv 2409.16633 (2024-09-25)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2409.16633",
+    "date": "2024-09-25",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2408.05614",
+    "title": "ICGMM: CXL-enabled Memory Expansion with Intelligent Caching Using Gaussian Mixture Model",
+    "venue": "arXiv 2408.05614 (2024-08-10)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2408.05614",
+    "date": "2024-08-10",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2406.02039",
+    "title": "LMB: Augmenting PCIe Devices with CXL-Linked Memory Buffer",
+    "venue": "arXiv 2406.02039 (2024-06-04)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2406.02039",
+    "date": "2024-06-04",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2405.14209",
+    "title": "Exploring and Evaluating Real-world CXL: Use Cases and System Adoption",
+    "venue": "arXiv 2405.14209 (2024-05-23)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2405.14209",
+    "date": "2024-05-23",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2405.10170",
+    "title": "A Mess of Memory System Benchmarking, Simulation and Application Profiling",
+    "venue": "arXiv 2405.10170 (2024-05-16)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2405.10170",
+    "date": "2024-05-16",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2404.03551",
+    "title": "Streamlining CXL Adoption for Hyperscale Efficiency",
+    "venue": "arXiv 2404.03551 (2024-04-04)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2404.03551",
+    "date": "2024-04-04",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2401.01150",
+    "title": "CXL and the Return of Scale-Up Database Engines",
+    "venue": "arXiv 2401.01150 (2024-01-02)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2401.01150",
+    "date": "2024-01-02",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2606.24079",
+    "title": "Aquifer: Hierarchical Memory Pooling with CXL and RDMA for MicroVM Snapshots",
+    "venue": "arXiv 2606.24079 (2026-06-23)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2606.24079",
+    "date": "2026-06-23",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2606.19746",
+    "title": "SAC: Disaggregated KV Cache System for Sparse Attention LLMs with CXL",
+    "venue": "arXiv 2606.19746 (2026-06-18)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2606.19746",
+    "date": "2026-06-18",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2606.07159",
+    "title": "Distributed Persistence Domain for Persistent Memory Pooling",
+    "venue": "arXiv 2606.07159 (2026-06-05)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2606.07159",
+    "date": "2026-06-05",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2605.20370",
+    "title": "Clove: Object-Level CXL Memory Management in Managed Runtimes",
+    "venue": "arXiv 2605.20370 (2026-05-19)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2605.20370",
+    "date": "2026-05-19",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2604.18529",
+    "title": "HybridGen: Efficient LLM Generative Inference via CPU-GPU Hybrid Computing",
+    "venue": "arXiv 2604.18529 (2026-04-20)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2604.18529",
+    "date": "2026-04-20",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2604.26968",
+    "title": "Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference",
+    "venue": "arXiv 2604.26968 (2026-04-19)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2604.26968",
+    "date": "2026-04-19",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2603.10087",
+    "title": "Pooling Engram Conditional Memory in Large Language Models using CXL",
+    "venue": "arXiv 2603.10087 (2026-03-10)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2603.10087",
+    "date": "2026-03-10",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2603.03271",
+    "title": "Virtual-Memory Assisted Buffer Management In Tiered Memory",
+    "venue": "arXiv 2603.03271 (2026-03-03)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2603.03271",
+    "date": "2026-03-03",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2601.09985",
+    "title": "FaTRQ: Tiered Residual Quantization for LLM Vector Search in Far-Memory-Aware ANNS Systems",
+    "venue": "arXiv 2601.09985 (2026-01-15)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2601.09985",
+    "date": "2026-01-15",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2511.20172",
+    "title": "Beluga: A CXL-Based Memory Architecture for Scalable and Efficient LLM KVCache Management",
+    "venue": "arXiv 2511.20172 (2025-11-25)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2511.20172",
+    "date": "2025-11-25",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2510.22869",
+    "title": "Jenga: Responsive Tiered Memory Management without Thrashing",
+    "venue": "arXiv 2510.22869 (2025-10-26)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2510.22869",
+    "date": "2025-10-26",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2510.14580",
+    "title": "ScalePool: Hybrid XLink-CXL Fabric for Composable Resource Disaggregation in Unified Scale-up Domains",
+    "venue": "arXiv 2510.14580 (2025-10-16)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2510.14580",
+    "date": "2025-10-16",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2509.09525",
+    "title": "TrEnv-X: Transparently Share Serverless Execution Environments Across Different Functions and Nodes",
+    "venue": "arXiv 2509.09525 (2025-09-11)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2509.09525",
+    "date": "2025-09-11",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2508.09351",
+    "title": "A Limits Study of Memory-side Tiering Telemetry",
+    "venue": "arXiv 2508.09351 (2025-08-12)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2508.09351",
+    "date": "2025-08-12",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2505.09164",
+    "title": "Adaptive Migration Decision for Multi-Tenant Memory Systems",
+    "venue": "arXiv 2505.09164 (2025-05-14)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2505.09164",
+    "date": "2025-05-14",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2503.23611",
+    "title": "My CXL Pool Obviates Your PCIe Switch",
+    "venue": "arXiv 2503.23611 (2025-03-30)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2503.23611",
+    "date": "2025-03-30",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2605.01938",
+    "title": "Cross-Layer Energy Analysis of Multimodal Training on Grace Hopper Superchips",
+    "venue": "arXiv 2605.01938 (2026-05-03)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2605.01938",
+    "date": "2026-05-03",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2605.00519",
+    "title": "Silicon Showdown: Performance, Efficiency, and Ecosystem Barriers in Consumer-Grade LLM Inference",
+    "venue": "arXiv 2605.00519 (2026-05-01)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2605.00519",
+    "date": "2026-05-01",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2604.23205",
+    "title": "Tessera: Secure, Near-Line-Rate Weight Streaming for UMA Edge Accelerators",
+    "venue": "arXiv 2604.23205 (2026-04-25)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2604.23205",
+    "date": "2026-04-25",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2512.21835",
+    "title": "Collaborative Lossless LLM Inference Serving with Offloading-based Pipeline Parallelism on Edge Devices",
+    "venue": "arXiv 2512.21835 (2025-12-26)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2512.21835",
+    "date": "2025-12-26",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2510.05109",
+    "title": "Tiny but Mighty: A Software-Hardware Co-Design Approach for Efficient Multimodal Inference on Battery-Powered Small Devices",
+    "venue": "arXiv 2510.05109 (2025-09-25)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2510.05109",
+    "date": "2025-09-25",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2508.21208",
+    "title": "GPU-acceleration of the Discontinuous Galerkin Shallow Water Equations Model (DG-SWEM) with OpenACC",
+    "venue": "arXiv 2508.21208 (2025-08-28)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2508.21208",
+    "date": "2025-08-28",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2505.23219",
+    "title": "Ghidorah: Fast LLM Inference on Edge with Speculative Decoding and Hetero-Core Parallelism",
+    "venue": "arXiv 2505.23219 (2025-05-29)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2505.23219",
+    "date": "2025-05-29",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2502.05317",
+    "title": "Apple vs. Oranges: Evaluating the Apple Silicon M-Series SoCs for HPC Performance and Efficiency",
+    "venue": "arXiv 2502.05317 (2025-02-07)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2502.05317",
+    "date": "2025-02-07",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2501.00279",
+    "title": "Performant Automatic BLAS Offloading on Unified Memory Architecture with OpenMP First-Touch Style Data Movement",
+    "venue": "arXiv 2501.00279 (2024-12-31)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2501.00279",
+    "date": "2024-12-31",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2412.05228",
+    "title": "MC3: Memory Contention based Covert Channel Communication on Shared DRAM System-on-Chips",
+    "venue": "arXiv 2412.05228 (2024-12-06)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2412.05228",
+    "date": "2024-12-06",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2405.06811",
+    "title": "Shared Virtual Memory: Its Design and Performance Implications for Diverse Applications",
+    "venue": "arXiv 2405.06811 (2024-05-10)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2405.06811",
+    "date": "2024-05-10",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2304.12149",
+    "title": "Exploring shared memory architectures for end-to-end gigapixel deep learning",
+    "venue": "arXiv 2304.12149 (2023-04-24)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2304.12149",
+    "date": "2023-04-24",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2012.06281",
+    "title": "Trash Talk: Accelerating Garbage Collection on Integrated GPUs is Worthless",
+    "venue": "arXiv 2012.06281 (2020-12-11)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2012.06281",
+    "date": "2020-12-11",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2604.19494",
+    "title": "DPC: A Distributed Page Cache over CXL",
+    "venue": "arXiv 2604.19494 (2026-04-21)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2604.19494",
+    "date": "2026-04-21",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2603.29483",
+    "title": "CXLRAMSim v1.0: System-Level Exploration of CXL Memory Expander Cards",
+    "venue": "arXiv 2603.29483 (2026-03-31)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2603.29483",
+    "date": "2026-03-31",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2511.06460",
+    "title": "Guidelines for Building Indexes on Partially Cache-Coherent CXL Shared Memory",
+    "venue": "arXiv 2511.06460 (2025-11-09)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2511.06460",
+    "date": "2025-11-09",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2509.10251",
+    "title": "XBOF: A Cost-Efficient CXL JBOF with Inter-SSD Compute Resource Sharing",
+    "venue": "arXiv 2509.10251 (2025-09-12)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2509.10251",
+    "date": "2025-09-12",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2508.15980",
+    "title": "CXLAimPod: CXL Memory is all you need in AI era",
+    "venue": "arXiv 2508.15980 (2025-08-21)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2508.15980",
+    "date": "2025-08-21",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2508.11477",
+    "title": "OpenCXD: An Open Real-Device-Guided Hybrid Evaluation Framework for CXL-SSDs",
+    "venue": "arXiv 2508.11477 (2025-08-15)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2508.11477",
+    "date": "2025-08-15",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2507.07223",
+    "title": "Compute Can't Handle the Truth: Why Communication Tax Prioritizes Memory and Interconnects in Modern AI Infrastructure",
+    "venue": "arXiv 2507.07223 (2025-07-09)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2507.07223",
+    "date": "2025-07-09",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2502.11046",
+    "title": "Enabling Efficient Transaction Processing on CXL-Based Memory Sharing",
+    "venue": "arXiv 2502.11046 (2025-02-16)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2502.11046",
+    "date": "2025-02-16",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
+  },
+  {
+    "id": "2411.18308",
+    "title": "CXL-Interference: Analysis and Characterization in Modern Computer Systems",
+    "venue": "arXiv 2411.18308 (2024-11-27)",
+    "topic": [
+      "3"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2411.18308",
+    "date": "2024-11-27",
+    "fetched": "2026-07-07",
+    "note": "자동 수집 — 평가방법 미분류"
   }
 ];
 
