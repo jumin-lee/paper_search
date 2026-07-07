@@ -1,0 +1,33 @@
+name: Daily paper fetch
+
+on:
+  schedule:
+    # 매일 23:00 UTC = 오전 8:00 KST
+    # (GitHub cron은 몇 분 지연될 수 있습니다)
+    - cron: "0 23 * * *"
+  workflow_dispatch: {}   # Actions 탭에서 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch new papers from arXiv
+        run: python scripts/fetch_papers.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "paper-bot"
+          git config user.email "actions@github.com"
+          git add data/papers.js
+          git diff --cached --quiet && echo "변경 없음" && exit 0
+          git commit -m "chore: daily paper fetch $(date -u +%F)"
+          git push
