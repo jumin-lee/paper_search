@@ -152,6 +152,35 @@ def classify(title, abstract):
     return topics
 
 
+# 평가방법 키워드 (abstract 대상). 확정이 아닌 "추정"이며 note에 추정 표시를 남깁니다.
+EVAL_PATTERNS = {
+    "survey": [r"\bsurvey\b", r"\btaxonomy\b", r"systematization", r"\bSoK\b", r"literature review"],
+    "sim": [r"\bgem5\b", r"simulat", r"cycle[- ]accurate", r"DRAMSim", r"Ramulator",
+            r"\bZSim\b", r"\bSniper\b", r"trace[- ]driven", r"\bSST\b"],
+    "emu": [r"\bFPGA\b", r"\bQEMU\b", r"emulat"],
+    "real": [r"real (?:CXL|hardware|system|machine|device)s?", r"commodity", r"off[- ]the[- ]shelf",
+             r"testbed", r"production", r"deploy(?:ed|ment)", r"\bGH200\b", r"Grace Hopper",
+             r"real[- ]world (?:evaluation|experiment|workload|system)", r"commercial CXL"],
+}
+
+
+def classify_eval(title, abstract):
+    """abstract 내용으로 평가방법을 키워드 '추정'. 신호 없으면 unknown.
+    sim/emu/real 중 2개 이상 신호면 mixed."""
+    text = f"{title} {abstract}"
+    if not abstract:
+        return "unknown"
+    if any(re.search(p, title, re.I) for p in EVAL_PATTERNS["survey"]):
+        return "survey"
+    hits = [k for k in ("sim", "emu", "real")
+            if any(re.search(p, text, re.I) for p in EVAL_PATTERNS[k])]
+    if len(hits) >= 2:
+        return "mixed"
+    if len(hits) == 1:
+        return hits[0]
+    return "unknown"
+
+
 def brief_note(abstract):
     """abstract 첫 문장(들)을 NOTE_MAX_CHARS 이내로 자른 기계적 요약."""
     if not abstract:
@@ -170,10 +199,49 @@ def brief_note(abstract):
     return out + " (abstract 발췌)"
 
 
+def reclassify():
+    """eval=unknown인 학회 논문의 abstract를 다시 받아 평가방법을 키워드 추정으로 채움.
+    abstract 전문을 출력하므로, 사람이(또는 Claude가) 결과를 검수해 수정할 수 있습니다."""
+    src, papers, _ = load_db()
+    conf_names = set(CONFERENCES.values())
+    targets = [p for p in papers
+               if p.get("eval") == "unknown" and conf_names & set(p.get("tags", []))]
+    print(f"재분류 대상: {len(targets)}편")
+    items = [{"doi": p["id"] if "/" in p["id"] else ""} for p in targets]
+    fetch_abstracts(items)
+
+    changed = 0
+    for p, it in zip(targets, items):
+        ab = it.get("abstract", "")
+        ev = classify_eval(p["title"], ab)
+        print("=" * 80)
+        print(f"[{p['venue']}] {p['title']}")
+        print(f"  abstract: {ab if ab else '(미확보)'}")
+        print(f"  → eval 추정: {ev}")
+        if ev != "unknown":
+            p["eval"] = ev
+            if "eval 자동추정" not in p.get("note", ""):
+                p["note"] = p.get("note", "") + " · eval 자동추정"
+            changed += 1
+        if ab and "abstract 미확보" in p.get("note", ""):
+            p["note"] = brief_note(ab) + (" · eval 자동추정" if ev != "unknown" else "")
+
+    if changed:
+        save_db(src, papers)
+    print("=" * 80)
+    print(f"\n{changed}/{len(targets)}편 eval 채움 (나머지는 unknown 유지)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--year", type=int, default=datetime.now(timezone.utc).year)
+    ap.add_argument("--reclassify", action="store_true",
+                    help="기존 미분류 학회 논문의 eval을 abstract 기반으로 재추정")
     args = ap.parse_args()
+
+    if args.reclassify:
+        reclassify()
+        return
 
     src, papers, excluded = load_db()
     seen_titles = {norm_title(p["title"]) for p in papers} | {norm_title(x["title"]) for x in excluded}
@@ -201,17 +269,19 @@ def main():
             if pid in seen_ids:
                 continue
             url = f"https://doi.org/{h['doi']}" if h["doi"] else h["ee"]
+            ev = classify_eval(h["title"], h.get("abstract", ""))
             entry = {
                 "id": pid,
                 "title": h["title"],
                 "venue": f"{name} {args.year}",
                 "topic": topics or ["3"],
                 "tags": [name],
-                "eval": "unknown",
+                "eval": ev,
                 "url": url,
                 "date": h.get("pubdate") or f"{args.year}",
                 "fetched": today,
-                "note": brief_note(h.get("abstract", "")),
+                "note": brief_note(h.get("abstract", ""))
+                        + (" · eval 자동추정" if ev != "unknown" else ""),
             }
             papers.append(entry)
             seen_titles.add(norm_title(h["title"]))

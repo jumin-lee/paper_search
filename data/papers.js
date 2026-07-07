@@ -458,10 +458,10 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
-    "url": "https://dl.acm.org/doi/10.1145/3676641.3711998",
+    "eval": "emu",
+    "url": "https://dl.acm.org/doi/10.1145/3676641.3715988",
     "date": "2025-03",
-    "note": "CXL 패브릭 원격 fork ⚠️ 평가방법 확인 필요"
+    "note": "CXL 패브릭 원격 fork · eval abstract 확인"
   },
   {
     "id": "2512.04449",
@@ -615,11 +615,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408613",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "By decoupling compute and memory resources into independent pools that are provisioned and managed separately, disaggregated memory (DM) is promising to break the scaling constraints for memory systems and improve resour… (abstract 발췌)"
+    "note": "By decoupling compute and memory resources into independent pools that are provisioned and managed separately, disaggregated memory (DM) is promising to break the scaling constraints for memory systems and improve resour… (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408523",
@@ -631,11 +631,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408523",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "Lookup tables (LUTs) have recently gained attention as an alternative compute mechanism that maps input operands to precomputed results, eliminating the need for arithmetic logic. (abstract 발췌)"
+    "note": "Lookup tables (LUTs) have recently gained attention as an alternative compute mechanism that maps input operands to precomputed results, eliminating the need for arithmetic logic. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408495",
@@ -647,11 +647,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408495",
     "date": "2025-12-15",
     "fetched": "2026-07-07",
-    "note": "The scaling of computation throughput continues to outpace improvements in memory bandwidth, making many deep learning workloads memory-bound. (abstract 발췌)"
+    "note": "The scaling of computation throughput continues to outpace improvements in memory bandwidth, making many deep learning workloads memory-bound. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408592",
@@ -663,11 +663,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408592",
     "date": "2024-12-28",
     "fetched": "2026-07-07",
-    "note": "The expansion of long-context Large Language Models (LLMs) creates significant memory system challenges. (abstract 발췌)"
+    "note": "The expansion of long-context Large Language Models (LLMs) creates significant memory system challenges. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408588",
@@ -679,11 +679,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408588",
     "date": "2025-05-19",
     "fetched": "2026-07-07",
-    "note": "The ability to dynamically allocate memory is fundamental in modern programming languages. However, this feature is not adequately supported in current general-purpose PIM devices. (abstract 발췌)"
+    "note": "The ability to dynamically allocate memory is fundamental in modern programming languages. However, this feature is not adequately supported in current general-purpose PIM devices. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408469",
@@ -695,11 +695,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408469",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "We introduce C^3, a systematic methodology for designing Compute Express Link (CXL) coherence controllers, to overcome interoperability challenges that arise from the mismatch of coherence protocols… (abstract 발췌)"
+    "note": "We introduce C^3, a systematic methodology for designing Compute Express Link (CXL) coherence controllers, to overcome interoperability challenges that arise from the mismatch of coherence protocols… (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408452",
@@ -727,11 +727,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408437",
     "date": "2026-01-24",
     "fetched": "2026-07-07",
-    "note": "Near-data processing (NDP) mitigates the data movement bottleneck in modern computing systems by performing computation close to where the data resides. (abstract 발췌)"
+    "note": "Near-data processing (NDP) mitigates the data movement bottleneck in modern computing systems by performing computation close to where the data resides. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408509",
@@ -743,11 +743,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408509",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "Current multiprocessors that support the total store order (TSO) memory consistency model invariably use writeback (WB) cache-coherence protocols. (abstract 발췌)"
+    "note": "Current multiprocessors that support the total store order (TSO) memory consistency model invariably use writeback (WB) cache-coherence protocols. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408595",
@@ -759,11 +759,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408595",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "The growing demand for high-bandwidth and largecapacity memory access in data-intensive workloads has driven the development and deployment of Processing-in-Memory (PIM) architectures. (abstract 발췌)"
+    "note": "The growing demand for high-bandwidth and largecapacity memory access in data-intensive workloads has driven the development and deployment of Processing-in-Memory (PIM) architectures. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408527",
@@ -775,11 +775,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "emu",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408527",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "Compute Express Link (CXL) fundamentally shifts the memory abstraction boundary, moving memory management functions from the host CPU to external controllers. (abstract 발췌)"
+    "note": "Compute Express Link (CXL) fundamentally shifts the memory abstraction boundary, moving memory management functions from the host CPU to external controllers. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408611",
@@ -791,11 +791,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408611",
     "date": "2025-11-28",
     "fetched": "2026-07-07",
-    "note": "Conventional heterogeneous computing systems built on PCIe interconnects suffer from inefficient fine-grained host-device interactions and complex programming models. (abstract 발췌)"
+    "note": "Conventional heterogeneous computing systems built on PCIe interconnects suffer from inefficient fine-grained host-device interactions and complex programming models. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1109/HPCA68181.2026.11408598",
@@ -807,11 +807,11 @@ window.PAPERS = [
     "tags": [
       "HPCA"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1109/HPCA68181.2026.11408598",
     "date": "2026-01-31",
     "fetched": "2026-07-07",
-    "note": "Transformer-based large language models (LLMs) exhibit remarkable generative capabilities, but their inference throughput is limited by the autoregressive decoding process, which generates only one token per iteration. (abstract 발췌)"
+    "note": "Transformer-based large language models (LLMs) exhibit remarkable generative capabilities, but their inference throughput is limited by the autoregressive decoding process, which generates only one token per iteration. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3774934.3786411",
@@ -823,11 +823,11 @@ window.PAPERS = [
     "tags": [
       "PPoPP"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3774934.3786411",
     "date": "2026-01-28",
     "fetched": "2026-07-07",
-    "note": "Space-partitioning indexes are widely used for managing multi-dimensional data, but their throughput is often memory-bottlenecked. (abstract 발췌)"
+    "note": "Space-partitioning indexes are widely used for managing multi-dimensional data, but their throughput is often memory-bottlenecked. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790121",
@@ -839,11 +839,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3779212.3790121",
     "date": "2024-07-23",
     "fetched": "2026-07-07",
-    "note": "CXL (Compute Express Link) is an emerging open industry-standard interconnect between processing and memory devices that is expected to revolutionize the way systems are designed. (abstract 발췌)"
+    "note": "CXL (Compute Express Link) is an emerging open industry-standard interconnect between processing and memory devices that is expected to revolutionize the way systems are designed. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790146",
@@ -871,11 +871,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1145/3779212.3790226",
     "date": "2025-05-09",
     "fetched": "2026-07-07",
-    "note": "Serving large language models (LLMs) places significant pressure on memory systems due to frequent accesses and growing key–value (KV) caches as context lengths increase. (abstract 발췌)"
+    "note": "Serving large language models (LLMs) places significant pressure on memory systems due to frequent accesses and growing key–value (KV) caches as context lengths increase. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790150",
@@ -903,11 +903,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3779212.3790198",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "Tiered memory systems typically place pages based on access frequency (hotness), yet frequency alone fails to capture the true performance impact. (abstract 발췌)"
+    "note": "Tiered memory systems typically place pages based on access frequency (hotness), yet frequency alone fails to capture the true performance impact. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3779212.3790212",
@@ -919,11 +919,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1145/3779212.3790212",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "The use of KV cache in LLM inference leads to large memory footprint and sub-optimal decoding performance. Prior studies typically address one of these two limitations by either offloading or stage-split inference. (abstract 발췌)"
+    "note": "The use of KV cache in LLM inference leads to large memory footprint and sub-optimal decoding performance. Prior studies typically address one of these two limitations by either offloading or stage-split inference. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3779212.3790203",
@@ -935,11 +935,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1145/3779212.3790203",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "The emerging Compute Express Link (CXL) interconnect supports multi-host cache-coherent disaggregated shared memory (CXL-DSM). (abstract 발췌)"
+    "note": "The emerging Compute Express Link (CXL) interconnect supports multi-host cache-coherent disaggregated shared memory (CXL-DSM). (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3779212.3790148",
@@ -951,11 +951,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3779212.3790148",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "Distributed transaction systems can leverage memory disaggregation for efficient resource scaling, yet they experience significant performance degradation under high-contention workloads. (abstract 발췌)"
+    "note": "Distributed transaction systems can leverage memory disaggregation for efficient resource scaling, yet they experience significant performance degradation under high-contention workloads. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3779212.3790245",
@@ -983,11 +983,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3760250.3762217",
     "date": "2025-09-25",
     "fetched": "2026-07-07",
-    "note": "The emergence of Superchips represents a significant advancement in next-generation AI hardware. (abstract 발췌)"
+    "note": "The emergence of Superchips represents a significant advancement in next-generation AI hardware. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790197",
@@ -999,11 +999,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1145/3779212.3790197",
     "date": "2026-03-03",
     "fetched": "2026-07-07",
-    "note": "Large language model (LLM) inference demands vast memory capacity and hierarchical memory structures, but conventional architectures suffer from excessive energy and latency costs due to frequent data movement across dee… (abstract 발췌)"
+    "note": "Large language model (LLM) inference demands vast memory capacity and hierarchical memory structures, but conventional architectures suffer from excessive energy and latency costs due to frequent data movement across dee… (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790201",
@@ -1015,11 +1015,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3779212.3790201",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "Heterogeneous memory combining DRAM and CXL exhibits variable performance, yet existing metrics correlate weakly with actual slowdown. We present CAMP, a principled framework for predicting CXL-induced slowdown. (abstract 발췌)"
+    "note": "Heterogeneous memory combining DRAM and CXL exhibits variable performance, yet existing metrics correlate weakly with actual slowdown. We present CAMP, a principled framework for predicting CXL-induced slowdown. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790149",
@@ -1031,11 +1031,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://doi.org/10.1145/3779212.3790149",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "A Compute Express Link (CXL) pod is a group of hosts that share CXL-attached memory. (abstract 발췌)"
+    "note": "A Compute Express Link (CXL) pod is a group of hosts that share CXL-attached memory. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3767295.3769321",
@@ -1047,11 +1047,11 @@ window.PAPERS = [
     "tags": [
       "EuroSys"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3767295.3769321",
     "date": "2026-04-26",
     "fetched": "2026-07-07",
-    "note": "Tiered memory systems are the norm to effectively tackle the increasing memory total cost of ownership (TCO) in modern data centers. (abstract 발췌)"
+    "note": "Tiered memory systems are the norm to effectively tackle the increasing memory total cost of ownership (TCO) in modern data centers. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3767295.3769371",
@@ -1063,11 +1063,11 @@ window.PAPERS = [
     "tags": [
       "EuroSys"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3767295.3769371",
     "date": "2026-04-26",
     "fetched": "2026-07-07",
-    "note": "Memory tiering, which extends local DRAM by incorporating remote DRAM or NVM via Compute Express Link (CXL), offers a promising solution to the DRAM capacity scaling problem. (abstract 발췌)"
+    "note": "Memory tiering, which extends local DRAM by incorporating remote DRAM or NVM via Compute Express Link (CXL), offers a promising solution to the DRAM capacity scaling problem. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3767295.3803621",
@@ -1079,11 +1079,11 @@ window.PAPERS = [
     "tags": [
       "EuroSys"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3767295.3803621",
     "date": "2026-04-26",
     "fetched": "2026-07-07",
-    "note": "Processing-in-Memory (PIM) integrates compute capabilities directly into memory modules to reduce costly data movement, promising large performance gains for data-intensive workloads. (abstract 발췌)"
+    "note": "Processing-in-Memory (PIM) integrates compute capabilities directly into memory modules to reduce costly data movement, promising large performance gains for data-intensive workloads. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3767295.3769344",
@@ -1095,11 +1095,11 @@ window.PAPERS = [
     "tags": [
       "EuroSys"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3767295.3769344",
     "date": "2026-04-26",
     "fetched": "2026-07-07",
-    "note": "In-network computing (INC) offers orders-of-magnitude performance gains for various applications. (abstract 발췌)"
+    "note": "In-network computing (INC) offers orders-of-magnitude performance gains for various applications. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3779212.3790142",
@@ -1111,11 +1111,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://doi.org/10.1145/3779212.3790142",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "Processing-in-Memory (PIM) delivers enormous performance by taking advantage of internal DRAM bandwidth and parallelism. However, graph applications are difficult to adapt to PIM due to their irregular access patterns. (abstract 발췌)"
+    "note": "Processing-in-Memory (PIM) delivers enormous performance by taking advantage of internal DRAM bandwidth and parallelism. However, graph applications are difficult to adapt to PIM due to their irregular access patterns. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "10.1145/3779212.3790137",
@@ -1127,11 +1127,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "emu",
     "url": "https://doi.org/10.1145/3779212.3790137",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "Computational storage drives (CSDs) present a promising approach to improve system performance through near data processing in SSDs. (abstract 발췌)"
+    "note": "Computational storage drives (CSDs) present a promising approach to improve system performance through near data processing in SSDs. (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3779212.3790181",
@@ -1143,11 +1143,11 @@ window.PAPERS = [
     "tags": [
       "ASPLOS"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://doi.org/10.1145/3779212.3790181",
     "date": "2026-03-22",
     "fetched": "2026-07-07",
-    "note": "The integration of machine learning (ML) into OS kernels is severely hampered by the high latency of offloading to discrete GPUs (dGPUs), where data transfers across the PCIe bus can consume over 93% of the total executi… (abstract 발췌)"
+    "note": "The integration of machine learning (ML) into OS kernels is severely hampered by the high latency of offloading to discrete GPUs (dGPUs), where data transfers across the PCIe bus can consume over 93% of the total executi… (abstract 발췌) · eval abstract 확인"
   },
   {
     "id": "10.1145/3767295.3803602",
