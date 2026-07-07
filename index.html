@@ -62,6 +62,7 @@
     padding:7px 12px; border-radius:2px; cursor:pointer;
   }
   .export:hover{background:var(--copper-soft)}
+  .export + .export{margin-left:0}
 
   /* ── 태그 토글 바 (다중 선택 OR 필터) ── */
   .tagbar{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px}
@@ -115,6 +116,12 @@
     color:var(--line); padding:4px;
   }
   .pin[aria-pressed="true"]{color:var(--copper)}
+  .btns{display:flex; flex-direction:column; align-items:center; gap:2px}
+  .hide-btn{
+    background:none; border:none; cursor:pointer; font-size:14px; line-height:1;
+    color:var(--line); padding:4px;
+  }
+  .hide-btn:hover{color:var(--copper)}
   .empty{
     text-align:center; color:var(--muted); padding:60px 0;
     font-family:'IBM Plex Mono',monospace; font-size:13px;
@@ -148,6 +155,7 @@
   <div class="wrap">
     <button class="tab" data-view="all" aria-pressed="true">전체 피드</button>
     <button class="tab" data-view="bm" aria-pressed="false">북마크</button>
+    <button class="tab" data-view="hidden" aria-pressed="false">제외 <span id="tab-hidden-n"></span></button>
     <select id="f-topic" aria-label="주제 필터">
       <option value="">주제: 전체</option>
       <option value="1">1 · CXL Memory / PNM</option>
@@ -166,6 +174,7 @@
     </select>
     <input type="search" id="f-q" placeholder="제목·비고 검색…" aria-label="검색">
     <button class="export" id="btn-export">북마크 내보내기 ↓</button>
+    <button class="export" id="btn-export-hidden">제외 내보내기 ↓</button>
   </div>
   <div class="wrap tagbar" id="tagbar" role="group" aria-label="학회·출처 태그 필터 (다중 선택)"></div>
 </div>
@@ -176,22 +185,27 @@
 
 <footer>
   <div class="wrap">
-    dedupe: arXiv ID + 정규화 제목 · 제외 목록 <span id="stat-excl">0</span>건 유지 ·
-    북마크는 브라우저(localStorage)에 저장되며, 내보내기로 data/bookmarks.js를 갱신해 커밋하면 기기 간 공유됩니다.
+    dedupe: arXiv ID + 정규화 제목 · 봇 제외 목록 <span id="stat-excl">0</span>건 유지 ·
+    북마크·제외는 브라우저(localStorage)에 저장되며, 내보내기로 data/bookmarks.js·hidden.js를 갱신해 커밋하면 기기 간 공유됩니다.
+    제외한 논문도 papers.js에 남아 있어 재수집되지 않습니다.
   </div>
 </footer>
 
 <script src="data/papers.js"></script>
 <script src="data/bookmarks.js"></script>
+<script src="data/hidden.js"></script>
 <script>
 (function(){
   const EVAL_LABEL = {sim:"SIM", emu:"EMU", real:"REAL", survey:"SURVEY", mixed:"MIXED", unknown:"—"};
   const TOPIC_LABEL = {1:"CXL·PNM", 2:"GPU-UM", 3:"EVAL·SURVEY", g:"GRAPH"};
 
-  // localStorage 오버레이: 저장소의 bookmarks.js를 기본값으로, 이후 토글은 브라우저에 저장
+  // localStorage 오버레이: 저장소의 bookmarks.js/hidden.js를 기본값으로, 이후 토글은 브라우저에 저장
   const LS_KEY = "cxl-paper-bookmarks";
   let bookmarks = new Set(JSON.parse(localStorage.getItem(LS_KEY) || "null") || window.BOOKMARKS);
   const persist = () => localStorage.setItem(LS_KEY, JSON.stringify([...bookmarks]));
+  const LS_HIDE = "cxl-paper-hidden";
+  let hidden = new Set(JSON.parse(localStorage.getItem(LS_HIDE) || "null") || window.HIDDEN || []);
+  const persistHidden = () => localStorage.setItem(LS_HIDE, JSON.stringify([...hidden]));
 
   let view = "all", fTopic = "", fEval = "", q = "";
   const selTags = new Set();  // 태그 다중 선택 (비어 있으면 전체, 선택 시 OR)
@@ -202,20 +216,24 @@
   function render(){
     const papers = window.PAPERS.map((p,i)=>({...p, seq:i}));
     let rows = papers.filter(p =>
-      (view==="all" || bookmarks.has(p.id)) &&
+      (view==="hidden" ? hidden.has(p.id) : !hidden.has(p.id)) &&
+      (view!=="bm" || bookmarks.has(p.id)) &&
       (!fTopic || p.topic.includes(fTopic)) &&
       (!fEval || p.eval===fEval) &&
       (!selTags.size || (p.tags||[]).some(t=>selTags.has(t))) &&
       (!q || (p.title+" "+(p.note||"")+" "+(p.venue||"")+" "+(p.date||"")+" "+(p.tags||[]).join(" ")).toLowerCase().includes(q))
     );
 
-    document.getElementById("stat-total").textContent = window.PAPERS.length + " 편";
+    document.getElementById("stat-total").textContent = (window.PAPERS.length - hidden.size) + " 편";
     document.getElementById("stat-bm").textContent = bookmarks.size + " 편";
+    document.getElementById("tab-hidden-n").textContent = hidden.size ? hidden.size : "";
     document.getElementById("stat-round").textContent = window.PAPERS.map(p=>p.date||"").sort().pop() || "—";
     document.getElementById("stat-excl").textContent = (window.EXCLUDED||[]).length;
 
     if(!rows.length){
-      $list.innerHTML = '<div class="empty">조건에 맞는 논문이 없습니다 — 필터를 조정해 보세요.</div>';
+      $list.innerHTML = view==="hidden"
+        ? '<div class="empty">제외한 논문이 없습니다 — 각 논문의 ✕ 버튼으로 피드에서 치울 수 있습니다.</div>'
+        : '<div class="empty">조건에 맞는 논문이 없습니다 — 필터를 조정해 보세요.</div>';
       return;
     }
 
@@ -243,6 +261,13 @@
         persist(); render();
       });
     });
+    $list.querySelectorAll(".hide-btn").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const id = btn.dataset.id;
+        hidden.has(id) ? hidden.delete(id) : hidden.add(id);
+        persistHidden(); render();
+      });
+    });
   }
 
   function rowHTML(p, addr){
@@ -262,7 +287,10 @@
         </div>
         ${p.note?`<div class="note">${p.note}</div>`:""}
       </div>
-      <button class="pin" data-id="${p.id}" aria-pressed="${on}" title="${on?"북마크 해제":"북마크"}">${on?"●":"○"}</button>
+      <div class="btns">
+        <button class="pin" data-id="${p.id}" aria-pressed="${on}" title="${on?"북마크 해제":"북마크"}">${on?"●":"○"}</button>
+        <button class="hide-btn" data-id="${p.id}" title="${view==="hidden"?"피드로 복원":"피드에서 제외"}">${view==="hidden"?"↩":"✕"}</button>
+      </div>
     </article>`;
   }
 
@@ -299,13 +327,15 @@
   document.getElementById("f-eval").addEventListener("change", e=>{fEval=e.target.value; render();});
   document.getElementById("f-q").addEventListener("input", e=>{q=e.target.value.trim().toLowerCase(); render();});
 
-  // 북마크 내보내기 → data/bookmarks.js 형식으로 다운로드
-  document.getElementById("btn-export").addEventListener("click", ()=>{
-    const body = "window.BOOKMARKS = " + JSON.stringify([...bookmarks], null, 2) + ";\n";
+  // 북마크/제외 내보내기 → data/*.js 형식으로 다운로드
+  function exportJS(varName, values, filename){
+    const body = "window." + varName + " = " + JSON.stringify(values, null, 2) + ";\n";
     const blob = new Blob([body], {type:"text/javascript"});
-    const a = Object.assign(document.createElement("a"), {href:URL.createObjectURL(blob), download:"bookmarks.js"});
+    const a = Object.assign(document.createElement("a"), {href:URL.createObjectURL(blob), download:filename});
     a.click(); URL.revokeObjectURL(a.href);
-  });
+  }
+  document.getElementById("btn-export").addEventListener("click", ()=>exportJS("BOOKMARKS", [...bookmarks], "bookmarks.js"));
+  document.getElementById("btn-export-hidden").addEventListener("click", ()=>exportJS("HIDDEN", [...hidden], "hidden.js"));
 
   render();
 })();
