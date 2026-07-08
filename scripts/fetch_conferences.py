@@ -184,7 +184,7 @@ def classify_eval(title, abstract):
 def brief_note(abstract):
     """abstract 첫 문장(들)을 NOTE_MAX_CHARS 이내로 자른 기계적 요약."""
     if not abstract:
-        return "학회 자동 수집 — abstract 미확보, 평가방법 미분류"
+        return "자동 수집 — abstract 미확보, 평가방법 미분류"
     text = re.sub(r"\s+", " ", abstract).strip()
     # LaTeX 마크업 정리: $\mathbf{C}^{\mathbf{3}}$ → C^3
     text = re.sub(r"\\[a-zA-Z]+", "", text).translate(str.maketrans("", "", "${}"))

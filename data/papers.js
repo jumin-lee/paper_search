@@ -204,21 +204,6 @@ window.PAPERS = [
     "note": "PolarDB 상용 CXL 스위치 사례"
   },
   {
-    "id": "scalepool",
-    "title": "ScalePool: Hybrid XLink-CXL Fabric for Composable Resource Disaggregation",
-    "venue": "arXiv (Oct 2025)",
-    "topic": [
-      "3"
-    ],
-    "tags": [
-      "arXiv"
-    ],
-    "eval": "sim",
-    "url": "https://www.researchgate.net/publication/396541660",
-    "date": "2025-10",
-    "note": "XLink+CXL 하이브리드 패브릭 ⚠️"
-  },
-  {
     "id": "2602.08800",
     "title": "Equilibria: Fair Multi-Tenant CXL Memory Tiering At Scale",
     "venue": "arXiv 2602.08800",
@@ -1175,11 +1160,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://arxiv.org/abs/2606.12556",
     "date": "2026-06-10",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The rapid shift toward agentic and long-context workloads in Large Language Models (LLMs) is pushing the industry beyond the capacity of individual servers toward disaggregated shared storage to handle TB-scale context s… (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2604.18120",
@@ -1191,11 +1176,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2604.18120",
     "date": "2026-04-20",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The use of disaggregated or far memory systems such as CXL memory pools has renewed interest in Near-Data Processing (NDP): situating cores close to memory to reduce bandwidth requirements to and from the CPU. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2512.04476",
@@ -1210,8 +1195,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2512.04476",
     "date": "2025-12-04",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Mixture-of-Experts (MoE) models scale large language models through conditional computation, but inference becomes memory-bound once expert weights exceed the capacity of GPU memory. (abstract 발췌)"
   },
   {
     "id": "2507.18559",
@@ -1223,11 +1208,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2507.18559",
     "date": "2025-07-24",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "On heterogeneous memory (HM) where fast memory (i.e., CPU-attached DRAM) and slow memory (e.g., remote NUMA memory, RDMA-connected memory, Persistent Memory (PM)) coexist, optimizing the placement of tree-structure index… (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2506.15613",
@@ -1239,11 +1224,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://arxiv.org/abs/2506.15613",
     "date": "2025-06-18",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "This paper explores how Compute Express Link (CXL) can transform PCIe-based block storage into a scalable, byte-addressable working memory. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2506.09758",
@@ -1255,11 +1240,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2506.09758",
     "date": "2025-06-11",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Despite the promise of alleviating the main memory bottleneck, and the existence of commercial hardware implementations, techniques for Near-Data Processing have seen relatively little real-world deployment. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2501.02524",
@@ -1271,11 +1256,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://arxiv.org/abs/2501.02524",
     "date": "2025-01-05",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Compute eXpress Link (CXL) is a promising technology for memory disaggregation and expansion. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2412.12491",
@@ -1290,8 +1275,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2412.12491",
     "date": "2024-12-17",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "High-Performance Computing (HPC) and Artificial Intelligence (AI) workloads typically demand substantial memory bandwidth and, to a degree, memory capacity. (abstract 발췌)"
   },
   {
     "id": "2411.02814",
@@ -1303,11 +1288,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2411.02814",
     "date": "2024-11-05",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "We present a thorough analysis of the use of modern heterogeneous systems interconnected by various cachecoherent links, including CXL, NVLink-C2C, and Infinity Fabric. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2411.02282",
@@ -1319,11 +1304,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://arxiv.org/abs/2411.02282",
     "date": "2024-11-04",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Compute eXpress Link (CXL) has emerged as a key enabler of memory disaggregation for future heterogeneous computing systems to expand memory on-demand and improve resource utilization. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2409.16633",
@@ -1338,8 +1323,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2409.16633",
     "date": "2024-09-25",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Deep Learning Recommendation Models (DLRMs) have become increasingly popular and prevalent in today's datacenters, consuming most of the AI inference cycles. (abstract 발췌)"
   },
   {
     "id": "2408.05614",
@@ -1351,11 +1336,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "emu",
     "url": "https://arxiv.org/abs/2408.05614",
     "date": "2024-08-10",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Compute Express Link (CXL) emerges as a solution for wide gap between computational speed and data communication rates among host and multiple devices. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2406.02039",
@@ -1370,8 +1355,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2406.02039",
     "date": "2024-06-04",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "PCIe devices, such as SSDs and GPUs, are pivotal in modern data centers, and their value is set to grow amidst the emergence of AI and large models. (abstract 발췌)"
   },
   {
     "id": "2405.14209",
@@ -1383,11 +1368,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2405.14209",
     "date": "2024-05-23",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Compute eXpress Link (CXL) is emerging as a promising memory interface technology. However, its performance characteristics remain largely unclear due to the limited availability of production hardware. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2405.10170",
@@ -1399,11 +1384,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://arxiv.org/abs/2405.10170",
     "date": "2024-05-16",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The Memory stress (Mess) framework provides a unified view of the memory system benchmarking, simulation and application profiling. The Mess benchmark provides a holistic and detailed memory system characterization. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2404.03551",
@@ -1415,11 +1400,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2404.03551",
     "date": "2024-04-04",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "In our exploration of Composable Memory systems utilizing CXL, we focus on overcoming adoption barriers at Hyperscale, underscored by economic models demonstrating Total Cost of Ownership (TCO). (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2401.01150",
@@ -1434,8 +1419,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2401.01150",
     "date": "2024-01-02",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The trend toward specialized processing devices such as TPUs, DPUs, GPUs, and FPGAs has exposed the weaknesses of PCIe in interconnecting these devices and their hosts. (abstract 발췌)"
   },
   {
     "id": "2606.24079",
@@ -1447,11 +1432,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "mixed",
     "url": "https://arxiv.org/abs/2606.24079",
     "date": "2026-06-23",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Memory stranding wastes 25-35% of installed DRAM in production cloud clusters. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2606.19746",
@@ -1466,8 +1451,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2606.19746",
     "date": "2026-06-18",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The scaling of LLMs toward long-context inference has shifted the primary serving system bottleneck from computation to memory capacity. (abstract 발췌)"
   },
   {
     "id": "2606.07159",
@@ -1479,11 +1464,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://arxiv.org/abs/2606.07159",
     "date": "2026-06-05",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Compute Express Link (CXL) enables memory pooling over disaggregated memory, offering the potential to improve resource utilization in persistent memory systems. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2605.20370",
@@ -1498,8 +1483,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2605.20370",
     "date": "2026-05-19",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Object-level management of tiered memory has been studied to address the inefficiencies in page-based systems. (abstract 발췌)"
   },
   {
     "id": "2604.18529",
@@ -1514,8 +1499,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2604.18529",
     "date": "2026-04-20",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "As modern LLMs support thousands to millions of tokens, KV caches grow to hundreds of gigabytes, stressing memory capacity and bandwidth. (abstract 발췌)"
   },
   {
     "id": "2604.26968",
@@ -1530,8 +1515,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2604.26968",
     "date": "2026-04-19",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Key-value (KV) cache memory management is the primary bottleneck limiting throughput and cost-efficiency in large-scale GPU inference serving. (abstract 발췌)"
   },
   {
     "id": "2603.10087",
@@ -1546,8 +1531,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2603.10087",
     "date": "2026-03-10",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Engram conditional memory has emerged as a promising component for LLMs by decoupling static knowledge lookup from dynamic computation. (abstract 발췌)"
   },
   {
     "id": "2603.03271",
@@ -1562,8 +1547,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2603.03271",
     "date": "2026-03-03",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Tiered memory architectures have gained significant traction in the database community in recent years. (abstract 발췌)"
   },
   {
     "id": "2601.09985",
@@ -1575,11 +1560,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2601.09985",
     "date": "2026-01-15",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Approximate Nearest-Neighbor Search (ANNS) is a key technique in retrieval-augmented generation (RAG), enabling rapid identification of the most relevant high-dimensional embeddings from massive vector databases. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2511.20172",
@@ -1591,11 +1576,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2511.20172",
     "date": "2025-11-25",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The rapid increase in LLM model sizes and the growing demand for long-context inference have made memory a critical bottleneck in GPU-accelerated serving systems. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2510.22869",
@@ -1610,24 +1595,25 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2510.22869",
     "date": "2025-10-26",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "A heterogeneous memory has a single address space with fast access to some addresses (a fast tier of DRAM) and slow access to other addresses (a capacity tier of CXL-attached memory or NVM). (abstract 발췌)"
   },
   {
     "id": "2510.14580",
     "title": "ScalePool: Hybrid XLink-CXL Fabric for Composable Resource Disaggregation in Unified Scale-up Domains",
     "venue": "arXiv 2510.14580 (2025-10-16)",
     "topic": [
-      "1"
+      "1",
+      "3"
     ],
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://arxiv.org/abs/2510.14580",
     "date": "2025-10-16",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "This paper proposes ScalePool, a novel cluster architecture designed to interconnect numerous accelerators using unified hardware interconnects rather than traditional long-distance networking. (abstract 발췌) · eval 추정 ⚠️"
   },
   {
     "id": "2509.09525",
@@ -1642,8 +1628,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2509.09525",
     "date": "2025-09-11",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Serverless computing is renowned for its computation elasticity, yet its full potential is often constrained by the requirement for functions to operate within local and dedicated background environments, resulting in li… (abstract 발췌)"
   },
   {
     "id": "2508.09351",
@@ -1655,11 +1641,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "emu",
     "url": "https://arxiv.org/abs/2508.09351",
     "date": "2025-08-12",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Increasing workload demands and emerging technologies necessitate the use of various memory and storage tiers in computing systems. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2505.09164",
@@ -1671,11 +1657,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2505.09164",
     "date": "2025-05-14",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Tiered memory systems consisting of fast small memory and slow large memory have emerged to provide high capacity memory in a cost-effective way. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2503.23611",
@@ -1690,8 +1676,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2503.23611",
     "date": "2025-03-30",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Pooling PCIe devices across multiple hosts offers a promising solution to mitigate stranded I/O resources, enhance device utilization, address device failures, and reduce total cost of ownership. (abstract 발췌)"
   },
   {
     "id": "2605.01938",
@@ -1703,11 +1689,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2605.01938",
     "date": "2026-05-03",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Multimodal deep learning models enable joint learning across heterogeneous data sources, including text, images, and video, but their rapid scaling introduces significant memory and communication bottlenecks. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2605.00519",
@@ -1722,8 +1708,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2605.00519",
     "date": "2026-05-01",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The operational landscape of local Large Language Model (LLM) inference has shifted from lightweight models to datacenter-class weights exceeding 70B parameters, creating profound systems challenges for consumer hardware… (abstract 발췌)"
   },
   {
     "id": "2604.23205",
@@ -1735,11 +1721,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2604.23205",
     "date": "2026-04-25",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Deploying proprietary Deep Neural Networks (DNNs) on commodity edge devices demands hardware-backed Digital Rights Management (DRM) capable of withstanding both software-level and physical adversaries. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2512.21835",
@@ -1754,8 +1740,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2512.21835",
     "date": "2025-12-26",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Providing lossless inference services of LLMs on edge devices remains challenging, especially given the extremely tight memory budgets. (abstract 발췌)"
   },
   {
     "id": "2510.05109",
@@ -1770,8 +1756,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2510.05109",
     "date": "2025-09-25",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Large Multimodal Models (LMMs) are inherently modular, comprising vision and audio encoders, a projector, and a language backbone. (abstract 발췌)"
   },
   {
     "id": "2508.21208",
@@ -1783,11 +1769,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2508.21208",
     "date": "2025-08-28",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "This paper presents a porting of DG-SWEM, a first-order discontinuous Galerkin solver for storm surge based on the Advanced Circulation Model (ADCIRC), to NVIDIA GPUs. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2505.23219",
@@ -1802,8 +1788,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2505.23219",
     "date": "2025-05-29",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "In-situ LLM inference on end-user devices has gained significant interest due to its privacy benefits and reduced dependency on external infrastructure. (abstract 발췌)"
   },
   {
     "id": "2502.05317",
@@ -1818,8 +1804,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2502.05317",
     "date": "2025-02-07",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "This paper investigates the architectural features and performance potential of the Apple Silicon M-Series SoCs (M1, M2, M3, and M4) for HPC. (abstract 발췌)"
   },
   {
     "id": "2501.00279",
@@ -1834,8 +1820,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2501.00279",
     "date": "2024-12-31",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "BLAS is a fundamental building block of advanced linear algebra libraries and many modern scientific computing applications. (abstract 발췌)"
   },
   {
     "id": "2412.05228",
@@ -1850,8 +1836,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2412.05228",
     "date": "2024-12-06",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Shared-memory system-on-chips (SM-SoC) are ubiquitously employed by a wide-range of mobile computing platforms, including edge/IoT devices, autonomous systems and smartphones. (abstract 발췌)"
   },
   {
     "id": "2405.06811",
@@ -1866,8 +1852,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2405.06811",
     "date": "2024-05-10",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Discrete GPU accelerators, while providing massive computing power for supercomputers and data centers, have their separate memory domain. (abstract 발췌)"
   },
   {
     "id": "2304.12149",
@@ -1882,8 +1868,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2304.12149",
     "date": "2023-04-24",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Deep learning has made great strides in medical imaging, enabled by hardware advances in GPUs. One major constraint for the development of new models has been the saturation of GPU memory resources during training. (abstract 발췌)"
   },
   {
     "id": "2012.06281",
@@ -1898,8 +1884,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2012.06281",
     "date": "2020-12-11",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Systems integrating heterogeneous processors with unified memory provide seamless integration among these processors with minimal development complexity. (abstract 발췌)"
   },
   {
     "id": "2604.19494",
@@ -1911,11 +1897,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "emu",
     "url": "https://arxiv.org/abs/2604.19494",
     "date": "2026-04-21",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Modern distributed file systems rely on uncoordinated, per node page caches that replicate hot data locally across the cluster. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2603.29483",
@@ -1927,11 +1913,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://arxiv.org/abs/2603.29483",
     "date": "2026-03-31",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The growing demands in the training and inference of Large Language Models (LLMs) are accelerating the adoption of scale-up systems that extend server shared memory through the use of Compute Express Link (CXL)-based loa… (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2511.06460",
@@ -1946,8 +1932,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2511.06460",
     "date": "2025-11-09",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The Partial Cache-Coherence (PCC) model maintains hardware cache coherence only within subsets of cores, enabling large-scale memory sharing with emerging memory interconnect technologies like Compute Express Link (CXL).… (abstract 발췌)"
   },
   {
     "id": "2509.10251",
@@ -1962,8 +1948,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2509.10251",
     "date": "2025-09-12",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Enterprise SSDs integrate numerous computing resources (e.g., ARM processor and onboard DRAM) to satisfy the ever-increasing performance requirements of I/O bursts. (abstract 발췌)"
   },
   {
     "id": "2508.15980",
@@ -1978,8 +1964,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2508.15980",
     "date": "2025-08-21",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The proliferation of data-intensive applications, ranging from large language models to key-value stores, increasingly stresses memory systems with mixed read-write access patterns. (abstract 발췌)"
   },
   {
     "id": "2508.11477",
@@ -1991,11 +1977,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "sim",
     "url": "https://arxiv.org/abs/2508.11477",
     "date": "2025-08-15",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "The advent of Compute Express Link (CXL) enables SSDs to participate in the memory hierarchy as large-capacity, byte-addressable memory devices. (abstract 발췌) · eval 자동추정"
   },
   {
     "id": "2507.07223",
@@ -2010,8 +1996,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2507.07223",
     "date": "2025-07-09",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Modern AI workloads such as large language models (LLMs) and retrieval-augmented generation (RAG) impose severe demands on memory, communication bandwidth, and resource flexibility. (abstract 발췌)"
   },
   {
     "id": "2502.11046",
@@ -2026,8 +2012,8 @@ window.PAPERS = [
     "eval": "unknown",
     "url": "https://arxiv.org/abs/2502.11046",
     "date": "2025-02-16",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Transaction processing systems are the crux for modern data-center applications, yet current multi-node systems are slow due to network overheads. (abstract 발췌)"
   },
   {
     "id": "2411.18308",
@@ -2039,11 +2025,11 @@ window.PAPERS = [
     "tags": [
       "arXiv"
     ],
-    "eval": "unknown",
+    "eval": "real",
     "url": "https://arxiv.org/abs/2411.18308",
     "date": "2024-11-27",
-    "fetched": "2026-07-07",
-    "note": "자동 수집 — 평가방법 미분류"
+    "fetched": "2026-07-08",
+    "note": "Compute Express Link (CXL) is a promising technology that addresses memory and storage challenges. (abstract 발췌) · eval 자동추정"
   }
 ];
 

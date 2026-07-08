@@ -11,6 +11,9 @@ import json, re, time, urllib.request, urllib.parse, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
+# 학회 수집기와 동일한 eval 추정기 / abstract 발췌기 재사용
+from fetch_conferences import classify_eval, brief_note
+
 ROOT = Path(__file__).resolve().parent.parent
 PAPERS_JS = ROOT / "data" / "papers.js"
 
@@ -69,6 +72,7 @@ def fetch(query: str):
             "title": re.sub(r"\s+", " ", e.find("a:title", NS).text).strip(),
             "url": f"https://arxiv.org/abs/{arxiv_id}",
             "published": e.find("a:published", NS).text[:10],
+            "abstract": re.sub(r"\s+", " ", (e.findtext("a:summary", "", NS) or "")).strip(),
         }
 
 
@@ -85,12 +89,15 @@ def main():
                 for hit in fetch(q):
                     if hit["id"] in seen_ids or norm_title(hit["title"]) in seen_titles:
                         continue
+                    ev = classify_eval(hit["title"], hit["abstract"])
                     entry = {
                         "id": hit["id"], "title": hit["title"],
                         "venue": f"arXiv {hit['id']} ({hit['published']})",
-                        "topic": [topic], "tags": ["arXiv"], "eval": "unknown",
+                        "topic": [topic], "tags": ["arXiv"], "eval": ev,
                         "url": hit["url"], "date": hit["published"],
-                        "fetched": today, "note": "자동 수집 — 평가방법 미분류",
+                        "fetched": today,
+                        "note": brief_note(hit["abstract"])
+                                + (" · eval 자동추정" if ev != "unknown" else ""),
                     }
                     papers.append(entry)
                     seen_ids.add(hit["id"]); seen_titles.add(norm_title(hit["title"]))
