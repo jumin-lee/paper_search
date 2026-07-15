@@ -2030,6 +2030,22 @@ window.PAPERS = [
     "date": "2024-11-27",
     "fetched": "2026-07-08",
     "note": "Compute Express Link (CXL) is a promising technology that addresses memory and storage challenges. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2607.12839",
+    "title": "HeteroMosaic: Exposing and Exploiting Heterogeneous Execution Opportunities for Energy-Efficient Edge LLM Inference",
+    "venue": "arXiv 2607.12839 (2026-07-14)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2607.12839",
+    "date": "2026-07-14",
+    "fetched": "2026-07-15",
+    "note": "Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. (abstract 발췌)"
   }
 ];
 
