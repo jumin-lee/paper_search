@@ -2046,6 +2046,22 @@ window.PAPERS = [
     "date": "2026-07-14",
     "fetched": "2026-07-15",
     "note": "Modern edge system-on-chips (SoCs) combine CPUs, integrated GPUs (iGPUs), and neural processing units (NPUs), yet existing LLM runtimes typically make coarse device-level decisions or optimize operators in isolation. (abstract 발췌)"
+  },
+  {
+    "id": "2607.18141",
+    "title": "HyMCache: A KV Cache Framework for Multi-Turn LLM Serving with CXL-Hybrid Memory",
+    "venue": "arXiv 2607.18141 (2026-07-20)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2607.18141",
+    "date": "2026-07-20",
+    "fetched": "2026-07-21",
+    "note": "Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. (abstract 발췌) · eval 자동추정"
   }
 ];
 
