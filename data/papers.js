@@ -2062,6 +2062,22 @@ window.PAPERS = [
     "date": "2026-07-20",
     "fetched": "2026-07-21",
     "note": "Long-context, multi-turn, and agentic LLM workloads increasingly reuse previously processed context, making KV-cache reuse essential for reducing redundant computation. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2607.22785",
+    "title": "FusionML: Prefill, Not Decode - Mechanism and Boundaries of CPU+GPU Co-Execution on Unified-Memory Apple Silicon",
+    "venue": "arXiv 2607.22785 (2026-07-24)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2607.22785",
+    "date": "2026-07-24",
+    "fetched": "2026-07-28",
+    "note": "Apple-Silicon SoCs share CPU, GPU, and Neural Engine over one unified memory system, raising the question of whether transformer inference can be accelerated by splitting single operators across units. (abstract 발췌)"
   }
 ];
 
