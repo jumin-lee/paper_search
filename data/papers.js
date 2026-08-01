@@ -2078,6 +2078,38 @@ window.PAPERS = [
     "date": "2026-07-24",
     "fetched": "2026-07-28",
     "note": "Apple-Silicon SoCs share CPU, GPU, and Neural Engine over one unified memory system, raising the question of whether transformer inference can be accelerated by splitting single operators across units. (abstract 발췌)"
+  },
+  {
+    "id": "2607.26633",
+    "title": "NELSSA: A GPU-PNM Heterogeneous System for Mixed-Length LLM Serving via Length-based Request Placement",
+    "venue": "arXiv 2607.26633 (2026-07-29)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2607.26633",
+    "date": "2026-07-29",
+    "fetched": "2026-08-01",
+    "note": "Modern LLMs and their agentic applications are broadening the range of serving workloads, spanning context lengths from a few hundred tokens to hundreds of thousands. (abstract 발췌)"
+  },
+  {
+    "id": "2607.27187",
+    "title": "A Photonic-CXL Memory Appliance for Scalable KV Cache Management in LLM Inference",
+    "venue": "arXiv 2607.27187 (2026-07-29)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "mixed",
+    "url": "https://arxiv.org/abs/2607.27187",
+    "date": "2026-07-29",
+    "fetched": "2026-08-01",
+    "note": "LLM inference at scale faces a memory wall. The KV cache demands tens of terabytes at hundreds of gigabytes per second, yet no current memory tier delivers both at once. (abstract 발췌) · eval 자동추정"
   }
 ];
 
