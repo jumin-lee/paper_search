@@ -2110,6 +2110,22 @@ window.PAPERS = [
     "date": "2026-07-29",
     "fetched": "2026-08-01",
     "note": "LLM inference at scale faces a memory wall. The KV cache demands tens of terabytes at hundreds of gigabytes per second, yet no current memory tier delivers both at once. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2607.28633",
+    "title": "Topology-Aware Data Movement for Disaggregated GPU Inference",
+    "venue": "arXiv 2607.28633 (2026-04-19)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2607.28633",
+    "date": "2026-04-19",
+    "fetched": "2026-08-06",
+    "note": "Disaggregated LLM inference creates a datacenter networking problem that no existing system solves correctly. When prefill and decode run on separate GPU pools, the KV cache must be transferred between them. (abstract 발췌) · eval 자동추정"
   }
 ];
 
