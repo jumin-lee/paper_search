@@ -2126,6 +2126,22 @@ window.PAPERS = [
     "date": "2026-04-19",
     "fetched": "2026-08-06",
     "note": "Disaggregated LLM inference creates a datacenter networking problem that no existing system solves correctly. When prefill and decode run on separate GPU pools, the KV cache must be transferred between them. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2608.05483",
+    "title": "PLoRA: An NDP-Enhanced Pooled-Memory System for Cost-Efficient Multi-LoRA Serving",
+    "venue": "arXiv 2608.05483 (2026-08-06)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2608.05483",
+    "date": "2026-08-06",
+    "fetched": "2026-08-07",
+    "note": "Multi-LoRA serving is how one base model becomes thousands of specialized variants, one adapter per user, task, or agent, and the deployments can hold 1000-plus adapters. (abstract 발췌) · eval 자동추정"
   }
 ];
 
