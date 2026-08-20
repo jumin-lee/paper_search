@@ -2142,6 +2142,22 @@ window.PAPERS = [
     "date": "2026-08-06",
     "fetched": "2026-08-07",
     "note": "Multi-LoRA serving is how one base model becomes thousands of specialized variants, one adapter per user, task, or agent, and the deployments can hold 1000-plus adapters. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2608.19147",
+    "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
+    "venue": "arXiv 2608.19147 (2026-08-19)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "mixed",
+    "url": "https://arxiv.org/abs/2608.19147",
+    "date": "2026-08-19",
+    "fetched": "2026-08-20",
+    "note": "Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. (abstract 발췌) · eval 자동추정"
   }
 ];
 
