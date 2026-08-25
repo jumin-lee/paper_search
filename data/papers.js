@@ -2158,6 +2158,22 @@ window.PAPERS = [
     "date": "2026-08-19",
     "fetched": "2026-08-20",
     "note": "Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2608.21731",
+    "title": "Building A CSFQ-Inspired Transport for Switched CXL Memory Pooling",
+    "venue": "arXiv 2608.21731 (2026-08-22)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2608.21731",
+    "date": "2026-08-22",
+    "fetched": "2026-08-25",
+    "note": "Emerging switched CXL memory pooling systems, albeit promising, suffer from significant performance interference due to the shared but performance-uncontrolled data path among concurrent memory streams between a host cor… (abstract 발췌)"
   }
 ];
 
