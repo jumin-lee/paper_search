@@ -2174,6 +2174,231 @@ window.PAPERS = [
     "date": "2026-08-22",
     "fetched": "2026-08-25",
     "note": "Emerging switched CXL memory pooling systems, albeit promising, suffer from significant performance interference due to the shared but performance-uncontrolled data path among concurrent memory streams between a host cor… (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00055",
+    "title": "$\\mathrm{P}{3}$-LLM: An Integrated NPU-PIM Accelerator for Edge LLM Inference Using Hybrid Numerical Formats",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00055",
+    "date": "2025-11-10",
+    "fetched": "2026-09-02",
+    "note": "The substantial memory bandwidth and computational demands of large language models (LLMs) present critical challenges for efficient inference. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00039",
+    "title": "Taking Analytic Databases to the Bank",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "real",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00039",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "The explosion of big data has spotlighted the bottlenecks of data movement in traditional von-Neumann architectures. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00061",
+    "title": "Vistara: Making CXL Real-Full Path From ASIC Design and OS Support to Hyperscale Deployment",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "real",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00061",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "Memory capacity is a major bottleneck in hyperscale datacenters, with approximately 40% of servers-out of millions at our company-being memory-capacity bound, which limits both performance and scalability. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00025",
+    "title": "ECC Enabled Reliable and Performant Processing-in-Memory",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00025",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "We introduce a Processing-in-Memory (PIM) architecture with tailored error checking and correcting (ECC) mechanisms to address reliability challenges from scaling errors and physical faults. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00060",
+    "title": "A Silicon-Proven Unified Low-Latency CXL Controller and Port-Based Routing Switch for Memory-Centric Fabrics",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00060",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "Compute Express Link (CXL) enables composable and memory-centric fabrics, but existing controllers inherit PCIederived hierarchy, boundary buffering, and deep pipelines, which constrain scalability and increase latency. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00179",
+    "title": "AXLE: Coordinated Offloading with Asynchronous Back-Streaming in Computational Memory Systems",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00179",
+    "date": "2025-12-04",
+    "fetched": "2026-09-02",
+    "note": "CXL-based Computational Memory (CCM) enables near-memory processing within expanded remote memory, offering opportunities to address data movement costs in disaggregated memory systems and to accelerate overall performan… (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00182",
+    "title": "Bridging Efficiency and Scalability in Llm System Via 3D Hybrid Pim With 2D in-Transit Computation",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00182",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "Large Language Models (LLMs) have transformed society, but their computational and energy needs hinder efficient inference. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00056",
+    "title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00056",
+    "date": "2025-04-24",
+    "fetched": "2026-09-02",
+    "note": "Attention-FC Disaggregated (AFD) LLM inference systems offload memory-bound Attention operations to memory-rich accelerators (e.g., CPUs, HBM-PIM) while retaining compute-bound Fully-Connected (FC) operations on GPUs. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00041",
+    "title": "Meridian: In-Memory Acceleration for RAG with Document Attention Decomposition",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00041",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "Retrieval-Augmented Generation (RAG) improves the factuality and timeliness of large language model outputs by incorporating external knowledge during inference. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00043",
+    "title": "BAAP: Coupling Compute-in-SRAM with DRAM Banks for Near-Memory Processing",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "sim",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00043",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "Near-DRAM-bank logic is a form of processing-inmemory (PIM) that lowers access latency and exploits bank-level parallelism to achieve increased throughput. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00104",
+    "title": "Bringing Near Data Processing Into the Low-Bit Floating-Point Era",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "sim",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00104",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "Near data processing (NDP) based on DRAM has emerged to be a promising solution to the “memory wall” problem of machine learning models. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00180",
+    "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00180",
+    "date": "2025-11-19",
+    "fetched": "2026-09-02",
+    "note": "High-performance Host processors (e.g., GPUs) can integrate Processing-In-Memory (PIM) devices, which can accelerate memory-intensive kernels of Machine Learning (ML) models, including Large Language Models (LLMs), by le… (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00019",
+    "title": "COSM: A Cooperative Scheduling Framework for Concurrent PIM and CPU Execution on Mobile Devices",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00019",
+    "date": "2026-06-01",
+    "fetched": "2026-09-02",
+    "note": "The development of on-device large language models (LLMs) is driven by the need for privacy and fast response times. Energyintensive data transfer on mobile devices makes Processing-inMemory (PIM) an effective solution. (abstract 발췌)"
+  },
+  {
+    "id": "10.1109/ISCA66397.2026.00105",
+    "title": "NasZip: Software and Hardware Co-Design to Accelerate Approximate Nearest Neighbor Search with DIMM-Based Near-Data Processing",
+    "venue": "ISCA 2026",
+    "topic": [
+      "1",
+      "g"
+    ],
+    "tags": [
+      "ISCA"
+    ],
+    "eval": "unknown",
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00105",
+    "date": "2026-05-21",
+    "fetched": "2026-09-02",
+    "note": "As large language models (LLMs) continue to advance, retrieval-augmented generation (RAG) has become the key mechanism for expanding model knowledge and reducing hallucinations. (abstract 발췌)"
   }
 ];
 
