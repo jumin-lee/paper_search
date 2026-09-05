@@ -2399,6 +2399,22 @@ window.PAPERS = [
     "date": "2026-05-21",
     "fetched": "2026-09-02",
     "note": "As large language models (LLMs) continue to advance, retrieval-augmented generation (RAG) has become the key mechanism for expanding model knowledge and reducing hallucinations. (abstract 발췌)"
+  },
+  {
+    "id": "2609.01338",
+    "title": "mzCache: On-Device LLM Memory Management under Multitasking",
+    "venue": "arXiv 2609.01338 (2026-09-01)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2609.01338",
+    "date": "2026-09-01",
+    "fetched": "2026-09-05",
+    "note": "On-device mobile Large Language Model (LLM) inference is gaining significant attention. However, mobile devices operate in highly dynamic multitasking environments where users frequently switch between applications. (abstract 발췌) · eval 자동추정"
   }
 ];
 
