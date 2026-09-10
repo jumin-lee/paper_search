@@ -2415,6 +2415,22 @@ window.PAPERS = [
     "date": "2026-09-01",
     "fetched": "2026-09-05",
     "note": "On-device mobile Large Language Model (LLM) inference is gaining significant attention. However, mobile devices operate in highly dynamic multitasking environments where users frequently switch between applications. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2609.05635",
+    "title": "DejaVu: Unifying Memory Allocations to Eliminate Redundant Copies on Unified-Memory SoCs",
+    "venue": "arXiv 2609.05635 (2026-09-04)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2609.05635",
+    "date": "2026-09-04",
+    "fetched": "2026-09-10",
+    "note": "GPU applications on unified-memory (UMA) edge platforms often inherit a discrete-GPU memory abstraction in which they allocate one buffer for the CPU, another for the GPU, and copy data between them before and after GPU… (abstract 발췌) · eval 자동추정"
   }
 ];
 
