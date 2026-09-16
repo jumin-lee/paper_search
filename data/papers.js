@@ -2431,6 +2431,22 @@ window.PAPERS = [
     "date": "2026-09-04",
     "fetched": "2026-09-10",
     "note": "GPU applications on unified-memory (UMA) edge platforms often inherit a discrete-GPU memory abstraction in which they allocate one buffer for the CPU, another for the GPU, and copy data between them before and after GPU… (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2609.10790",
+    "title": "Composable CXL Memory as a Kubernetes-Native Shared Memory for LLM Serving",
+    "venue": "arXiv 2609.10790 (2026-09-09)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2609.10790",
+    "date": "2026-09-09",
+    "fetched": "2026-09-16",
+    "note": "We present a Kubernetes Dynamic Resource Allocation (DRA) driver that makes composable CXL memory a schedulable cluster resource, and evaluate the resulting shared-memory tier for cross-node KV-cache reuse in LLM serving… (abstract 발췌) · eval 자동추정"
   }
 ];
 
