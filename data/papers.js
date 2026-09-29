@@ -2447,6 +2447,22 @@ window.PAPERS = [
     "date": "2026-09-09",
     "fetched": "2026-09-16",
     "note": "We present a Kubernetes Dynamic Resource Allocation (DRA) driver that makes composable CXL memory a schedulable cluster resource, and evaluate the resulting shared-memory tier for cross-node KV-cache reuse in LLM serving… (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2609.27266",
+    "title": "xTier: Intelligent Tiering for CXL-Enabled Memory",
+    "venue": "arXiv 2609.27266 (2026-09-23)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2609.27266",
+    "date": "2026-09-23",
+    "fetched": "2026-09-29",
+    "note": "CXL-enabled memory expands server memory capacity, but introduces a page-placement problem: the operating system must decide which pages should reside in DRAM and which should reside on slower CXL memory. (abstract 발췌)"
   }
 ];
 
