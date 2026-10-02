@@ -2463,6 +2463,22 @@ window.PAPERS = [
     "date": "2026-09-23",
     "fetched": "2026-09-29",
     "note": "CXL-enabled memory expands server memory capacity, but introduces a page-placement problem: the operating system must decide which pages should reside in DRAM and which should reside on slower CXL memory. (abstract 발췌)"
+  },
+  {
+    "id": "2610.00714",
+    "title": "MANTA: Machine Learning Augmented Tiering Advisor",
+    "venue": "arXiv 2610.00714 (2026-09-30)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "mixed",
+    "url": "https://arxiv.org/abs/2610.00714",
+    "date": "2026-09-30",
+    "fetched": "2026-10-02",
+    "note": "Memory tiering has been used to expand memory capacity, particularly in datacenters, by combining fast DRAM with slower tiers, including CXL-attached memory. (abstract 발췌) · eval 자동추정"
   }
 ];
 
