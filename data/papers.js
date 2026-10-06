@@ -2479,6 +2479,22 @@ window.PAPERS = [
     "date": "2026-09-30",
     "fetched": "2026-10-02",
     "note": "Memory tiering has been used to expand memory capacity, particularly in datacenters, by combining fast DRAM with slower tiers, including CXL-attached memory. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2610.03394",
+    "title": "EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures",
+    "venue": "arXiv 2610.03394 (2026-10-02)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2610.03394",
+    "date": "2026-10-02",
+    "fetched": "2026-10-06",
+    "note": "Emerging multi-agent LLMs demand privacy-preserving edge deployment, yet current inference systems struggle with these collaborative workflows. (abstract 발췌) · eval 자동추정"
   }
 ];
 
