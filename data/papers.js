@@ -2495,6 +2495,22 @@ window.PAPERS = [
     "date": "2026-10-02",
     "fetched": "2026-10-06",
     "note": "Emerging multi-agent LLMs demand privacy-preserving edge deployment, yet current inference systems struggle with these collaborative workflows. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2610.09414",
+    "title": "Indexing Designs and Adaptive Data Distribution Optimization for In-Memory Databases on Hybrid DDR--CXL Memory",
+    "venue": "arXiv 2610.09414 (2026-10-07)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2610.09414",
+    "date": "2026-10-07",
+    "fetched": "2026-10-08",
+    "note": "CXL memory expands single-node memory capacity for in-memory databases but has higher latency and lower bandwidth than local DDR. Hybrid DDR--CXL databases require joint indexing and data distribution design. (abstract 발췌)"
   }
 ];
 
