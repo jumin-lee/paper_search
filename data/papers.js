@@ -2511,6 +2511,22 @@ window.PAPERS = [
     "date": "2026-10-07",
     "fetched": "2026-10-08",
     "note": "CXL memory expands single-node memory capacity for in-memory databases but has higher latency and lower bandwidth than local DDR. Hybrid DDR--CXL databases require joint indexing and data distribution design. (abstract 발췌)"
+  },
+  {
+    "id": "2610.20354",
+    "title": "Understanding NVIDIA Grace-Blackwell Unified Memory Through Placement-Controlled Microbenchmarks",
+    "venue": "arXiv 2610.20354 (2026-10-14)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2610.20354",
+    "date": "2026-10-14",
+    "fetched": "2026-10-18",
+    "note": "NVIDIA Grace--Blackwell systems make CPU--GPU memory increasingly unified at the programming level, but unified addressability does not make the memory system uniform. (abstract 발췌) · eval 자동추정"
   }
 ];
 
