@@ -2527,6 +2527,22 @@ window.PAPERS = [
     "date": "2026-10-14",
     "fetched": "2026-10-18",
     "note": "NVIDIA Grace--Blackwell systems make CPU--GPU memory increasingly unified at the programming level, but unified addressability does not make the memory system uniform. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2610.22716",
+    "title": "CMM-MP: A Novel Memory Pooling Architecture using Purpose-built Memory Device with CXL and Ethernet",
+    "venue": "arXiv 2610.22716 (2026-10-15)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2610.22716",
+    "date": "2026-10-15",
+    "fetched": "2026-10-20",
+    "note": "CXL Memory Module - Memory Pooling (CMM-MP) introduces a novel memory pooling architecture to meet the unique requirements of emerging memory-intensive workloads. (abstract 발췌)"
   }
 ];
 
