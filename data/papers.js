@@ -2543,6 +2543,22 @@ window.PAPERS = [
     "date": "2026-10-15",
     "fetched": "2026-10-20",
     "note": "CXL Memory Module - Memory Pooling (CMM-MP) introduces a novel memory pooling architecture to meet the unique requirements of emerging memory-intensive workloads. (abstract 발췌)"
+  },
+  {
+    "id": "2610.33475",
+    "title": "LLMs in Cloud: A Discussion on Architecture, Orchestration, and Inference",
+    "venue": "arXiv 2610.33475 (2026-10-24)",
+    "topic": [
+      "1"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "real",
+    "url": "https://arxiv.org/abs/2610.33475",
+    "date": "2026-10-24",
+    "fetched": "2026-10-27",
+    "note": "The widespread deployment of foundational Large Language Models (LLM) across cloud datacenters marks a fundamental paradigm shift from stateless deep learning toward distributed, memory-intensive generative workloads. (abstract 발췌) · eval 자동추정"
   }
 ];
 
