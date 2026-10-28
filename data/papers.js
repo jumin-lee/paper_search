@@ -2559,6 +2559,22 @@ window.PAPERS = [
     "date": "2026-10-24",
     "fetched": "2026-10-27",
     "note": "The widespread deployment of foundational Large Language Models (LLM) across cloud datacenters marks a fundamental paradigm shift from stateless deep learning toward distributed, memory-intensive generative workloads. (abstract 발췌) · eval 자동추정"
+  },
+  {
+    "id": "2610.37307",
+    "title": "EdgePace: Deadline- and Freshness-Aware LLM Scheduling on Unified-Memory Platforms",
+    "venue": "arXiv 2610.37307 (2026-10-27)",
+    "topic": [
+      "2"
+    ],
+    "tags": [
+      "arXiv"
+    ],
+    "eval": "unknown",
+    "url": "https://arxiv.org/abs/2610.37307",
+    "date": "2026-10-27",
+    "fetched": "2026-10-28",
+    "note": "Large language models (LLMs) increasingly run on edge devices alongside tasks that continuously process sensor data. (abstract 발췌)"
   }
 ];
 
